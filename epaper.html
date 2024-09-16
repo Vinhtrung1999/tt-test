@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuổi Trẻ E-Paper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/33ad855007.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css./e_paper.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="header">
+            <div class="header-container">
+                <div class="main-header">
+                     <!-- nut 1 -->
+                    <div>
+                        <!-- Nút chính ở chế độ laptop -->
+                        <div class="menu-main d-none d-lg-block">
+                            <img src="https://epaper.tuoitre.vn/img/sort.svg" alt="Menu">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="#ttnb">Tuổi trẻ nhật báo</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="ttct" href="#gtts">Tuổi trẻ cuối tuần</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="ttc" href="#gtts">Tuổi trẻ cười</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="ttds" href="#gtts">Tuổi trẻ đặc san</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="">Giới thiệu</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="">Hướng dẫn</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Nút ở chế độ mobile -->
+                            <div class="menu-main-mobi d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+                                <img  src="https://epaper.tuoitre.vn/img/sort.svg" alt="Menu">
+                            </div>
+
+                            <div class="menu-sub d-lg-none"
+                                data-bs-toggle="offcanvas"
+                                href="#offcanvasExample"
+                                aria-controls="offcanvasExample">
+                                <img
+                                    src="https://epaper.tuoitre.vn/img/close-icon.svg">
+                            </div>
+                        </div>
+                        <div class="header-title">
+                            <a href="#ttnb">Tuổi trẻ nhật báo</a>
+                        </div>
+                        <div class="header-title">
+                            <a class="ttct" href="#gtts">Tuổi trẻ cuối tuần</a>
+                        </div>
+                        <div class="header-title">
+                            <a class="ttc" href="#gtts">Tuổi trẻ cười</a>
+                        </div>
+                        <div class="header-title">
+                            <a class="ttds" href="#gtts">Tuổi trẻ đặc san</a>
+                        </div>
+                        <div class="header-title">
+                            <a href="">Giới thiệu</a>
+                        </div>
+                        <div class="header-title">
+                            <a href="">Hướng dẫn</a>
+                        </div>
+                        <!-- nut 2 -->
+                        <div>
+                            <a href="login.html">
+                                <img
+                                    src="https://epaper.tuoitre.vn/img/user.svg"
+                                    alt="User profile">
+                            </a>
+                        </div>
+
+                        <div class="offcanvas offcanvas-start" tabindex="-1"
+                            id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-body">
+                                <div class="border-bottom">
+                                    <a class="nav-link" href="">Tuổi trẻ nhật
+                                        báo</a>
+                                </div>
+                                <div class="border-bottom">
+                                    <a class="nav-link" href="">Tuổi trẻ cuối
+                                        tuần</a>
+                                </div>
+                                <div class="border-bottom">
+                                    <a class="nav-link" href="">Tuổi trẻ cười</a>
+                                </div>
+                                <div class="border-bottom">
+                                    <a class="nav-link" href="">Tuổi trẻ đặc san</a>
+                                </div>
+                                <div class="border-bottom">
+                                    <a class="nav-link" href="">Giới thiệu</a>
+                                </div>
+                                <div>
+                                    <a class="nav-link" href="">Hướng dẫn</a>
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- image -->
+        <div class="intro-banner">
+            <img src="https://epaper.tuoitre.vn/img/introduction-banner.jpg" alt="">
+        </div>
+        <!-- nhat bao tuoi tre -->
+        <div class="d-flex justify-content-between mt-4 gap-4 intro-container">
+            <div><img class="d-none d-lg-block" src="https://epaper.tuoitre.vn/img/banner-intro-nb.png"></div>
+            <div class="ps-lg-5">
+                <div class="d-lg-none"><img src="https://epaper.tuoitre.vn/img/banner-intro-nb.png"></div>
+                <h3 class="my-3 my-lg-0">Nhật báo tuổi trẻ</h3>
+                <p>Là sản phẩm nòng cốt của Tuổi Trẻ, hiện là nhật báo có số
+                    phát hành cao nhất Việt Nam.</p>
+                <p>Nội dung của nhật báo Tuổi Trẻ luôn trung thành với lý
+                    tưởng đấu tranh với những cái xấu, bảo vệ cái đẹp, ủng
+                    hộ sự tiến bộ. Đồng thời, luôn thể hiện tính nghĩa hiệp,
+                    nhân văn trong từng bài viết, từng trang báo.</p>
+                <p>Nhật báo Tuổi Trẻ phiên bản E–Paper sẽ được tặng kèm
+                    trong gói thành viên Tuổi Trẻ Sao.</p>
+                <div class="text-center text-lg-start">
+                    <button class="btn-register">Đăng ký ngay</button>
+                </div>
+            </div>
+        </div>
+        <!-- bao tuoi tre cuoi -->
+        <div class="d-flex justify-content-between mt-4 gap-4 intro-container intro-wrapper bttc-mobi">
+            <div>
+                <div class="d-lg-none intro-container-bttc"><img src="https://epaper.tuoitre.vn/img/banner-intro-ttc.png" width="486.53" height="275"></div>
+                    <h3 class="my-3 my-lg-0">Báo tuổi trẻ cười</h3>
+                    <div>Tờ báo trào phúng thọ nhất việt nam</div>
+                    <p>
+                        <b>Tuổi trẻ cười </b>tờ báo châm biếm và trào phúng duy
+                        nhất Việt Nam với tuổi đời gần 40 năm.
+                    </p>
+                    <p>
+                        <b>Tuổi trẻ cười </b>ra đời ngày 1-1-1984. Ba người có
+                        vai trò trụ cột chủ trương và thúc đẩy sự ra mắt của
+                        Tuổi Trẻ Cười là Cố Thủ Tướng Võ Văn Kiệt, ông Nguyễn
+                        Văn Trấn (bí danh Bảy Trấn, nhà cách mạng lão thành, nhà
+                        báo) và Nhà báo Trần Bạch Đằng. Ông Bảy Trấn là người
+                        đặt ra bút danh chung Hai Cù Nèo, nhân vật đã trở thành
+                        bút danh chung cho báo Tuổi Trẻ Cười ngày hôm nay.
+                    </p>
+                    <p>Ngoài Hai Cù Nèo, còn một hệ thống các nhân vật nổi tiếng
+                        của tờ báo: Cô Tú, LinDa Kiều… và những chuyên mục nổi
+                        tiếng: Quán Mắc Cỡ, Hội chợ Cười, Nụ Cười Nhập Khẩu,
+                        Tiệm Tạp Hóa Hai Cù Nèo, Bức Tranh Vân Cẩu… và đây còn
+                        là tờ báo duy nhất có Câu lạc bộ Họa Sĩ Biếm quy tụ
+                        những họa sĩ biếm hàng đầu Việt Nam.
+                    </p>
+                    <div class="text-center text-lg-start">
+                        <button class="btn-register">Đăng ký ngay</button>
+                    </div>
+                </div>
+                <div><img class="d-none d-lg-block" src="https://epaper.tuoitre.vn/img/banner-intro-ttc.png" alt=""></div>
+        </div>
+        <!-- tuoi tre cuoi tuan -->
+        <div class="d-flex justify-content-between mt-4 gap-4 intro-container">
+            <div><img class="d-none d-lg-block" src="https://epaper.tuoitre.vn/img/banner-intro-ttct.png"></div>
+            <div class="ps-lg-5">
+                <div class="d-lg-none"><img src="https://epaper.tuoitre.vn/img/banner-intro-ttct.png"></div>
+                <h3 class="my-3 my-lg-0">Tuổi trẻ cuối tuần</h3>
+                <p>Tuần báo chính trị - xã hội hấp dẫn</p>
+                <p>Qua 40 năm hiện diện, <b>Tuổi Trẻ Cuối Tuần </b>(Ra đời
+                    ngày 16 -1- 1983 với tên gọi ban đầu là Tuổi Trẻ Chủ
+                    Nhật) duy trì bản sắc tuần báo hàng đầu Việt Nam trong
+                    lĩnh vực chính trị - quốc tế - văn hóa - xã hội….</p>
+                <p>Bạn sẽ tìm thấy ở đây, trên cả ấn phẩm báo in và online,
+                    những bài viết của các chuyên gia hàng đầu phân tích,
+                    bình luận và dự báo các vấn đề kinh tế chính trị xã hội
+                    lớn trong nước và quốc tế, những câu chuyện nhân văn và
+                    trí tuệ.</p>
+                <p>Chúng tôi giữ vững một không gian rộng mở cho những quan
+                    điểm độc lập, sáng tạo, đa chiều và thiết thực, đóng góp
+                    thúc đẩy tiến bộ và bình đẳng. Chúng tôi khích lệ tranh
+                    luận lành mạnh, công bằng và tôn trọng. Chúng tôi không
+                    ngừng theo đuổi những ý tưởng mới trên nền tảng báo chí
+                    minh bạch và can đảm. Cùng bạn, chúng tôi góp những lời
+                    bàn trong sáng cho xã hội.
+                </p>
+                <div class="text-center text-lg-start">
+                    <button class="btn-register">Đăng ký ngay</button>
+                </div>
+            </div>
+        </div>
+        <!-- dac san tuoi tre -->
+        <div class="d-flex justify-content-between mt-4 gap-4 intro-container intro-wrapper bttc-mobi">
+            <div>
+                <div class="d-lg-none intro-container-bttc"><img src="https://epaper.tuoitre.vn/img/Group%20179.png"></div>
+                    <h3 class="my-3 my-lg-0">Báo tuổi trẻ cười</h3>
+                    <p>Nội dung của Đặc San Tuổi Trẻ luôn trung thành với lý
+                        tưởng đấu tranh với những cái xấu, bảo vệ cái đẹp, ủng
+                        hộ sự tiến bộ. Đồng thời, luôn thể hiện tính nghĩa hiệp,
+                        nhân văn trong từng bài viết, từng trang báo.</p>
+
+                    <div class="text-center text-lg-start">
+                        <button class="btn-register">Đăng ký ngay</button>
+                    </div>
+                </div>
+            <div><img class="d-none d-lg-block" src="https://epaper.tuoitre.vn/img/Group%20179.png"></div>
+        </div>
+        <div class="mt-5 introduction-container d-lg-block d-none" id="ttnb">
+            <div class="text-center">
+                <div class="pack-line">&nbsp;</div>
+                <h4 class="list-pack-title">Gói Tuổi Trẻ Sao & E-Paper</h4>
+                <p class="list-pack-desc">Đăng ký càng nhiều, ưu đã càng lớn</p>
+            </div>
+            <table>
+                <tr>
+                    <th>
+                        <h3>Chọn gói</h3>
+                    </th>
+                    <th class="pack-col">
+                        <h5 class="pack-type">Tiết kiệm</h5>
+                        <h2 class="pack-discount-price">322 sao</h2>
+                        <span class="text-decoration-line-through pack-price">402 sao</span>
+                        <span class="pack-price">-20%</span>
+                    </th>
+                    <th class="pack-col">
+                        <h5 class="pack-type">Siêu ưu đãi</h5>
+                        <h2 class="pack-discount-price">428 Sao</h2>
+                        <span class="text-decoration-line-through pack-price">713 sao</span>
+                        <span class="pack-price">-40%</span>
+                    </th>
+                    <th class="pack-col">
+                        <h5 class="pack-type">Cơ bản</h5>
+                        <h2 class="pack-discount-price">63 sao</h2>
+                        <span class="text-decoration-line-through pack-price">70 sao</span>
+                        <span class="pack-price">-10%</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Thành viên Tuổi Trẻ Sao</td>
+                    <td>06 tháng</td>
+                    <td>12 tháng</td>
+                    <td>01 tháng</td>
+                </tr>
+                <tr>
+                    <td>E-Paper Tuổi Trẻ Cuối Tuần</td>
+                    <td>26 kỳ</td>
+                    <td>52 kỳ</td>
+                    <td>4 kỳ</td>
+                </tr>
+                <tr>
+                    <td>E–Paper Tuổi Trẻ Cười</td>
+                    <td>12 kỳ</td>
+                    <td>24 kỳ</td>
+                    <td>2 kỳ</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button class="btn-register-choose">Đăng ký</button>
+                    </td>
+                    <td>
+                        <button class="btn-register-choose">Đăng ký</button>
+                    </td>
+                    <td>
+                        <button class="btn-register-choose">Đăng ký</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- mobile -->
+        <div class="d-lg-none">
+            <div class="list-pack-combo-mobile">
+                <div class="combo-mobile-item-header">
+                    <h5 class="pack-type">Tiết kiệm</h5>
+                    <h2 class="pack-discount-price">322 sao</h2>
+                    <span class="text-decoration-line-through pack-price">402 sao</span>
+                    <span class="pack-price">-20%</span>
+                </div>
+                <div class="combo-mobile-item-description">
+                    <div class="mt-2">
+                        <img src="https://epaper.tuoitre.vn/img/check_ring_round_light.svg">
+                        Thành viên Tuổi Trẻ Sao <b>06 tháng</b>
+                    </div>
+                    <div class="mt-2">
+                        <img src="https://epaper.tuoitre.vn/img/check_ring_round_light.svg">
+                            E-Paper Tuổi Trẻ Cuối Tuần <b>26 kỳ</b>
+                    </div>
+                    <div class="mt-2">
+                        <img src="https://epaper.tuoitre.vn/img/check_ring_round_light.svg">
+                        E-Paper Tuổi Trẻ Cười <b>12 kỳ</b>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button class="btn-register-pack">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            <div class="list-pack-combo-mobile">
+                <div class="combo-mobile-item-header">
+                    <h5 class="pack-type">Siêu ưu đãi</h5>
+                    <h2 class="pack-discount-price">428 sao</h2>
+                    <span class="text-decoration-line-through pack-price">713 sao</span>
+                    <span class="pack-price">-40%</span>
+                </div>
+                <div class="combo-mobile-item-description">
+                    <div class="mt-2">
+                        <img src="https://epaper.tuoitre.vn/img/check_ring_round_light.svg">
+                        Thành viên Tuổi Trẻ Sao <b>12 tháng</b>
+                    </div>
+                    <div class="mt-2">
+                        <img src="https://epaper.tuoitre.vn/img/check_ring_round_light.svg">
+                         E-Paper Tuổi Trẻ Cuối Tuần <b>52 kỳ</b>
+                    </div>
+                    <div class="mt-2">
+                        <img src="https://epaper.tuoitre.vn/img/check_ring_round_light.svg">
+                        E-Paper Tuổi Trẻ Cười <b>24 kỳ</b>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button class="btn-register-pack">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            <div class="list-pack-combo-mobile">
+                <div class="combo-mobile-item-header">
+                    <h5 class="pack-type">Cơ bản</h5>
+                    <h2 class="pack-discount-price">63 sao</h2>
+                    <span class="text-decoration-line-through pack-price">70 sao</span>
+                    <span class="pack-price">-10%</span>
+                </div>
+                <div class="combo-mobile-item-description">
+                    <div class="mt-2">
+                        <img src="https://epaper.tuoitre.vn/img/check_ring_round_light.svg">
+                        Thành viên Tuổi Trẻ Sao <b>01 tháng</b>
+                    </div>
+                    <div class="mt-2">
+                        <img src="https://epaper.tuoitre.vn/img/check_ring_round_light.svg">
+                        E-Paper Tuổi Trẻ Cuối Tuần <b>4 kỳ kỳ</b>
+                    </div>
+                    <div class="mt-2">
+                        <img src="https://epaper.tuoitre.vn/img/check_ring_round_light.svg">
+                        E-Paper Tuổi Trẻ Cười <b>2 kỳ</b>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button class="btn-register-pack">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price-intro-container" id="gtts">
+            <div class="price-intro-container" id="gtts">
+                    <div class="text-center sub-title">
+                        <div class="pack-line">&nbsp;</div>
+                        <h4>Chọn gói Tuổi Trẻ E-Paper của bạn</h4>
+                        <p>Lựa chọn gói Tuổi Trẻ E-Paper để không bỏ lỡ những nội dung hấp dẫn đặc biệt chỉ có trên ấn phẩm in của báo Tuổi Trẻ!</p>
+                    </div>
+                    <div class="d-flex flex-wrap toggle-container">
+                        <div class="toggle-item title-tvtt active">Thành viên Tuổi Trẻ</div>
+                        <div class="toggle-item title-ttct" id="content-ttct">Tuổi Trẻ Cuối Tuần</div>
+                        <div class="toggle-item title-ttc" id="contend-ttc">Tuổi Trẻ Cười</div>
+                        <div class="toggle-item title-ttdc" id="contend-ttds">Tuổi Trẻ Đặc San</div>
+                    </div>
+                    <div class="text-center py-4 note">Ưu đãi <span style="color: #ed1c24;">40%</span> cho bạn đọc đang là thành viên Tuổi Trẻ Sao</div>
+                    <!-- Thanh vien tuoi trẻ -->
+                    <div class="epaper-package"></div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="px-3 px-lg-5 footer">
+            <div class="">
+                <div class="d-none d-lg-block">
+                    <div class="footer-title">
+                        <div>
+                            <a href="index.html">Trang chủ</a>
+                        </div>
+                        <div>
+                            <a href="detail_video.html">Media</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Thời sự</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Thế giới</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Pháp luật</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Kinh doanh</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Công nghệ</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Xe</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Du lịch</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Nhịp sống trẻ</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Văn hóa</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Giải trí</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Thể thao</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Giáo dục</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Khoa học</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Sức khỏe</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Giả thật</a>
+                        </div>
+                        <div>
+                            <a href="detail_thoisu.html">Bạn đọc</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between d-lg-none footer-icon">
+                    <div><img src="https://sso.tuoitre.vn/images/ftt.png" width="105px" height="30px"></div>
+                    <div>
+                        <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="1.16699" width="23" height="23" rx="11.5" stroke="#666666"></rect>
+                                <path fill-rule="evenodd"
+                                    clip-rule="evenodd" d="M6.75984
+                                        16.9011C6.52448 16.8314 6.30973 16.7076
+                                        6.13372 16.5399C5.9577 16.3722 5.82559
+                                        16.1657 5.74851 15.9377C5.3081 14.7594
+                                        5.1776 9.83915 6.02581 8.86784C6.30811
+                                        8.55186 6.70668 8.35732 7.13501
+                                        8.32645C9.41049 8.0876 16.4408 8.11945
+                                        17.2483 8.40606C17.4754 8.47799 17.6828
+                                        8.59915 17.8552 8.76047C18.0275 8.92178
+                                        18.1602 9.11908 18.2433 9.33757C18.7245
+                                        10.5557 18.7408 14.9823 18.178
+                                        16.1527C18.0287 16.4573 17.7788 16.7041
+                                        17.4685 16.8533C16.6203 17.2673 7.88534
+                                        17.2594 6.75984 16.9011ZM10.3729
+                                        14.5922L14.4508 12.5222L10.3729
+                                        10.4363V14.5922Z" fill="#666666"></path>
+                        </svg></span>
+                        <span><svg width="24" height="24" viewBox="0 0 24
+                                    24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="23" height="23"
+                                        rx="11.5" stroke="#565656"></rect>
+                                    <path d="M17.6 11.8C17.6 13.1377 17.6
+                                        14.4754 17.6 15.813C17.6 16.8852 16.875
+                                        17.6 15.813 17.6C13.1377 17.6 10.4725
+                                        17.6 7.79718 17.6C6.725 17.6 6 16.875 6
+                                        15.813C6 13.1377 6 10.4725 6 7.79718C6
+                                        6.725 6.725 6 7.78697 6C10.4623 6
+                                        13.1275 6 15.8028 6C16.875 6 17.5898
+                                        6.725 17.5898 7.78697C17.6 9.12465 17.6
+                                        10.4623 17.6 11.8ZM14.8532
+                                        11.8102C14.843 10.1151 13.4644 8.75704
+                                        11.7694 8.76725C10.1049 8.77746 8.74683
+                                        10.1458 8.74683 11.8204C8.74683 13.5155
+                                        10.1254 14.8838 11.8204 14.8838C13.4951
+                                        14.8736 14.8634 13.4951 14.8532
+                                        11.8102ZM15.5373 8.76725C15.9049 8.76725
+                                        16.2113 8.46092 16.2113 8.0831C16.2113
+                                        7.70528 15.9049 7.40915 15.5373
+                                        7.40915C15.1697 7.40915 14.8634 7.71549
+                                        14.8634 8.09331C14.8634 8.46092 15.1697
+                                        8.76725 15.5373 8.76725Z"
+                                        fill="#565656"></path>
+                                    <path d="M9.42065 11.8323C9.42065 10.5253
+                                        10.4826 9.45312 11.7897 9.45312C13.1069
+                                        9.45312 14.1791 10.5253 14.1791
+                                        11.8426C14.1689 13.1394 13.1069 14.2014
+                                        11.7999 14.2014C10.4928 14.2014 9.42065
+                                        13.1394 9.42065 11.8323Z"
+                                        fill="#565656"></path>
+                        </svg></span>
+                        <span><svg width="24" height="25" viewBox="0 0 24
+                                    25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="1.16699" width="23"
+                                        height="23" rx="11.5" stroke="#666666"></rect>
+                                    <path d="M12.9966 12.8847H15.2299L15.5805
+                                        10.6021H12.9961V9.35462C12.9961 8.40641
+                                        13.3041 7.56559 14.1857
+                                        7.56559H15.6023V5.57366C15.3534 5.53985
+                                        14.827 5.46582 13.8323 5.46582C11.7553
+                                        5.46582 10.5375 6.5694 10.5375
+                                        9.08364V10.6021H8.40234V12.8847H10.5375V19.1584C10.9604
+                                        19.2224 11.3887 19.2658 11.8284
+                                        19.2658C12.2258 19.2658 12.6137 19.2293
+                                        12.9966 19.1772V12.8847Z"
+                                        fill="#666666"></path>
+                        </svg></span>
+                    </div>
+                </div>
+
+                <div class="d-lg-flex justify-content-between flex-row mb-lg-3 footer-bottom">
+                    <div class="pt-3">
+                        <p>Tổng biên tập: Lê Thế Chữ</p>
+                        <p>Giấy phép hoạt động báo điện tử tiếng Việt, tiếng
+                            Anh Số 561/GP-BTTTT, cấp ngày 25-11-2022.</p>
+                        <a href="">
+                            <p style="font-weight: 600;">Thông tin tòa soạn
+                                - Thành Đoàn TP.HCM</p>
+                        </a>
+                        </div>
+                        <div class="pt-3">
+                            <p>Địa chỉ: 60A Hoàng Văn Thụ, P.9, Q.Phú Nhuận, Tp.
+                                Hồ Chí Minh</p>
+                            <p>Hotline: 0918.033.133 - Email: tto@tuoitre.com.vn</p>
+                            <p>Phòng Quảng Cáo Báo Tuổi Trẻ: 028.39974848</p>
+                        </div>
+                        <div class="pt-lg-3 d-flex d-lg-block">
+                        <div>
+                            <a href="">
+                                <p style="font-weight: 600;">Liên Hệ Quảng
+                                        Cáo <span class="d-lg-none mx-1">|</span></p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <p style="font-weight: 600;">Chính Sách Bảo
+                                        Mật <span class="d-lg-none mx-1">|</span></p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <p style="font-weight: 600;">Liên Hệ Góp Ý</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-none d-lg-block">
+                    <div class="footer-logo-container">
+                        <div>
+                            <a href="index.html">
+                                <img src="https://sso.tuoitre.vn/images/ftt.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="detail_video.html">
+                                <img src="https://sso.tuoitre.vn/images/ftttv.svg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="podcast.html">
+                                <img src="https://sso.tuoitre.vn/images/fttpodcast.svg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="https://sso.tuoitre.vn/images/fttc.svg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="https://sso.tuoitre.vn/images/fttct.svg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="https://sso.tuoitre.vn/images/fttn.svg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="https://sso.tuoitre.vn/images/fttmedia.svg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="raovat.html">
+                                <img src="https://sso.tuoitre.vn/images/fttrv.svg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="https://sso.tuoitre.vn/images/fmuctim.svg">
+                            </a>
+                        </div>
+                </div>
+                </div>
+
+                <div class="d-flex footer-social-container mt-2 mb-3">
+                    <div class="flex-grow-1">
+                        <span>© Copyright 2023 TuoiTre Online, All rights
+                                reserved ® Tuổi Trẻ Online giữ bản quyền nội
+                                dung trên website này</span> 
+                        <span class="d-lg-none"> <br> ® Tuổi Trẻ Online giữ bản
+                                quyền nội dung trên website này
+                        </span>
+                    </div>
+                    <div class="bd-highlight d-none d-lg-block">
+                        <span><svg width="24" height="25" viewBox="0 0 24
+                                    25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="1.16699" width="23"
+                                        height="23" rx="11.5" stroke="#666666"></rect>
+                                    <path fill-rule="evenodd"
+                                        clip-rule="evenodd" d="M6.75984
+                                        16.9011C6.52448 16.8314 6.30973 16.7076
+                                        6.13372 16.5399C5.9577 16.3722 5.82559
+                                        16.1657 5.74851 15.9377C5.3081 14.7594
+                                        5.1776 9.83915 6.02581 8.86784C6.30811
+                                        8.55186 6.70668 8.35732 7.13501
+                                        8.32645C9.41049 8.0876 16.4408 8.11945
+                                        17.2483 8.40606C17.4754 8.47799 17.6828
+                                        8.59915 17.8552 8.76047C18.0275 8.92178
+                                        18.1602 9.11908 18.2433 9.33757C18.7245
+                                        10.5557 18.7408 14.9823 18.178
+                                        16.1527C18.0287 16.4573 17.7788 16.7041
+                                        17.4685 16.8533C16.6203 17.2673 7.88534
+                                        17.2594 6.75984 16.9011ZM10.3729
+                                        14.5922L14.4508 12.5222L10.3729
+                                        10.4363V14.5922Z" fill="#666666"></path>
+                        </svg></span>
+                        <span><svg width="24" height="24" viewBox="0 0 24
+                                    24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="23" height="23"
+                                        rx="11.5" stroke="#565656"></rect>
+                                    <path d="M17.6 11.8C17.6 13.1377 17.6
+                                        14.4754 17.6 15.813C17.6 16.8852 16.875
+                                        17.6 15.813 17.6C13.1377 17.6 10.4725
+                                        17.6 7.79718 17.6C6.725 17.6 6 16.875 6
+                                        15.813C6 13.1377 6 10.4725 6 7.79718C6
+                                        6.725 6.725 6 7.78697 6C10.4623 6
+                                        13.1275 6 15.8028 6C16.875 6 17.5898
+                                        6.725 17.5898 7.78697C17.6 9.12465 17.6
+                                        10.4623 17.6 11.8ZM14.8532
+                                        11.8102C14.843 10.1151 13.4644 8.75704
+                                        11.7694 8.76725C10.1049 8.77746 8.74683
+                                        10.1458 8.74683 11.8204C8.74683 13.5155
+                                        10.1254 14.8838 11.8204 14.8838C13.4951
+                                        14.8736 14.8634 13.4951 14.8532
+                                        11.8102ZM15.5373 8.76725C15.9049 8.76725
+                                        16.2113 8.46092 16.2113 8.0831C16.2113
+                                        7.70528 15.9049 7.40915 15.5373
+                                        7.40915C15.1697 7.40915 14.8634 7.71549
+                                        14.8634 8.09331C14.8634 8.46092 15.1697
+                                        8.76725 15.5373 8.76725Z"
+                                        fill="#565656"></path>
+                                    <path d="M9.42065 11.8323C9.42065 10.5253
+                                        10.4826 9.45312 11.7897 9.45312C13.1069
+                                        9.45312 14.1791 10.5253 14.1791
+                                        11.8426C14.1689 13.1394 13.1069 14.2014
+                                        11.7999 14.2014C10.4928 14.2014 9.42065
+                                        13.1394 9.42065 11.8323Z"
+                                        fill="#565656"></path>
+                        </svg></span>
+                        <span><svg width="24" height="25" viewBox="0 0 24
+                                    25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="1.16699" width="23"
+                                        height="23" rx="11.5" stroke="#666666"></rect>
+                                    <path d="M12.9966 12.8847H15.2299L15.5805
+                                        10.6021H12.9961V9.35462C12.9961 8.40641
+                                        13.3041 7.56559 14.1857
+                                        7.56559H15.6023V5.57366C15.3534 5.53985
+                                        14.827 5.46582 13.8323 5.46582C11.7553
+                                        5.46582 10.5375 6.5694 10.5375
+                                        9.08364V10.6021H8.40234V12.8847H10.5375V19.1584C10.9604
+                                        19.2224 11.3887 19.2658 11.8284
+                                        19.2658C12.2258 19.2658 12.6137 19.2293
+                                        12.9966 19.1772V12.8847Z"
+                                        fill="#666666"></path>
+                        </svg></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+    $('.ttct').on('click', function() {
+        $('#content-ttct').click();
+    })
+
+    $('.ttc').on('click', function() {
+        $('#contend-ttc').click();
+    })
+
+    $('.ttds').on('click', function() {
+        $('#contend-ttds').click();
+    })
+
+    // Phần cái nút ở mobile nè 3 dấu gạch
+    let menuMainMobi = $('.menu-main-mobi');
+    let menuSub = $('.menu-sub');
+   
+    menuMainMobi.on('click', function() {
+        menuMainMobi.css('display', 'none');
+        menuSub.css('display', 'block');
+    })
+
+    menuSub.on('click', function() {
+        menuMainMobi.css('display', 'block');
+        menuSub.css('display', 'none');
+    })
+
+
+    // Cái nút hiện danh sách
+    let mainMenu = $('.menu-main');
+    let listGroup = $('.list-group');
+
+    mainMenu.on('mouseenter', function() {
+        $(this).addClass('menu-main-animate');
+    })
+
+    // phần cuối bài 
+    let toogleItem = $('.toggle-item');
+
+    let titleTvtt = $('.title-tvtt');
+    let titleTtct = $('.title-ttct');
+    let titleTtc = $('.title-ttc');
+    let titleTtds = $('.title-ttdc');
+
+    let priceTvtt = $('.price-tvtt');
+    let priceTtct = $('.price-ttct');
+    let priceTtc = $('.price-ttc');
+    let priceTtds = $('.price-ttds');
+
+
+    toogleItem.each(function() {
+        let $this = $(this);
+
+        $this.on('click', function() {
+            removeActive();
+            $this.addClass('active');
+        })
+    })
+
+    function removeActive() {
+    $('.active').each(function() {
+        $(this).removeClass('active');
+      })
+    }
+
+    priceTtct.css('display', 'none');
+    priceTtc.css('display', 'none');
+    priceTtds.css('display', 'none');
+    $('.note').css('display', 'none');
+
+    titleTvtt.on('click', function() {
+        priceTvtt.css('display', 'flex');
+        priceTtct.css('display', 'none');
+        priceTtc.css('display', 'none');
+        priceTtds.css('display', 'none');
+        $('.note').css('display', 'none');
+    })
+
+    titleTtct.on('click', function() {
+        priceTtct.css('display', 'flex');
+        priceTvtt.css('display', 'none');
+        priceTtc.css('display', 'none');
+        priceTtds.css('display', 'none');
+        $('.note').css('display', 'block');
+    })
+
+    titleTtc.on('click', function() {
+        priceTtc.css('display', 'flex');
+        priceTvtt.css('display', 'none');
+        priceTtct.css('display', 'none');
+        priceTtds.css('display', 'none');
+        $('.note').css('display', 'block');
+    })
+
+    titleTtds.on('click', function() {
+        priceTtds.css('display', 'flex');
+        priceTvtt.css('display', 'none');
+        priceTtct.css('display', 'none');
+        priceTtc.css('display', 'none');
+        $('.note').css('display', 'none');
+    })
+})
+
+// Dữ liệu 
+    let data = {
+        tvtt: [
+            {
+                title: 'GÓI 6 THÁNG',
+                price: 180,
+                discount: 10,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttsao-02.png',
+            },
+            {
+                title: 'GÓI 12 THÁNG',
+                price: 360,
+                discount: 20,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttsao-02.png',
+            },
+            {
+                title: 'GÓI 1 THÁNG',
+                price: 30,
+                discount: 5,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttsao-04.png',
+            }
+        ],
+        ttct: [
+            {
+                title: 'GÓI 1 KỲ',
+                price: 7,
+                discount: 0,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttct-01.png',
+            },
+            {
+                title: 'GÓI 26 KỲ',
+                price: 182,
+                discount: 10,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttct-02.png',
+            },
+            {
+                title: 'GÓI 52 KỲ',
+                price: 364,
+                discount: 20,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttct-02.png',
+            }
+        ],
+        ttc: [
+            {
+                title: 'GÓI 1 KỲ',
+                price: 7,
+                discount: 0,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttc-01.png',
+            },
+            {
+                title: 'GÓI 12 KỲ',
+                price: 84,
+                discount: 10,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttc-02.png',
+            },
+            {
+                title: 'GÓI 24 KỲ',
+                price: 168,
+                discount: 20,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttc-03.png',
+            }
+        ],
+        ttds: [
+            {
+                title: 'ĐẶC SAN 02.09',
+                price: 7,
+                discount: 0,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttds-02.png',
+            },
+            {
+                title: 'CẨM NANG TUYỂN SINH',
+                price: 15,
+                discount: 0,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttds-03.png',
+            },
+            {
+                title: 'XUÂN 2024',
+                price: 21,
+                discount: 0,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttds-04.png',
+            },
+            {
+                title: 'UỔI TRẺ CƯỜI XUÂN 2024',
+                price: 16,
+                discount: 0,
+                image: 'https://epaper.tuoitre.vn/img/intro-ttds-05.png',
+            }
+        ]
+    }
+
+    const ePaperPackage = $('.epaper-package');
+    const dataKeys = Object.keys(data);
+    let renderHtml = '';
+
+    dataKeys.forEach((key,index) => {
+        let packageHtml = `<div class="${index === 0 || index === (dataKeys.length -1 )
+                                    ? 'mt-5 pt-3'
+                                    : ' '} price-intro-list price-${key} ${index === 0
+                                                                           ? 'active': ' '}">`;
+
+        let packages = data[key];
+        packages.forEach(p => {
+            packageHtml += `<div class="price-intro-block-container">
+                            <h4 class="title">${p.title}</h4>
+                            <div class="price">${calcPercent(p.price, p.discount)}<span class="fs-6">sao</span></div>
+                            ${p.discount
+                                    ? `<span class="text-decoration-line-through discount">${p.price}sao</span>
+                                        <span class="discount">-${p.discount}%</span> <br>`
+                                    : ''}
+                            <img class="my-4" src="${p.image}"> <br>
+                            <button class="btn-register-pack">Đăng ký</button>
+                        </div>`
+        });
+        packageHtml += '</div>';
+        renderHtml += packageHtml;
+    });
+    
+    ePaperPackage.html(renderHtml);
+
+    function calcPercent(price = 0, percent = 0) {
+        return Math.floor(price - (price * percent / 100));
+    }
+</script>

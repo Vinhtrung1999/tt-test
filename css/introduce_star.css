@@ -1,0 +1,810 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+    background: #eed1b6;
+    display: none;
+}
+
+.header-title {
+    padding: 40px 70px;
+}
+
+.header-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+    color:#100551;
+    font-size: 17px !important;
+}
+
+.btn_login {
+    font-size: 17px;
+}
+
+.header-link .nav-link {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.header-title .btn-register {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 11px 43px;
+    border: 0.8px solid #100551;
+    border-radius: 100px;
+    margin-left: 20px;
+}
+
+.text-title {
+    font-weight: 700;
+    color: #100551;
+}
+
+/* mobile and tablet */
+.header-mobi {
+    background: #eed1b6;
+}
+
+.header-title-mobi {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+	height: 65px;
+}
+
+.offcanvas {
+	transition: all ease-in .3s;
+}
+
+.offcanvas-end {
+    width: 100%;
+    background-color: #eed1b6cc;
+    margin-top: 65px;
+	border-left: none
+}
+
+.offcanvas-body {
+    padding: 0;
+}
+
+.offcanvas-body-row1 div {
+    background: #fff6e0;
+}
+
+.offcanvas-body-row1 a {
+    font-weight: 500;
+    color: #100551;
+	padding: 15px 30px;
+}
+
+.offcanvas-body-row2 {
+    background: #fff6e0;
+}
+
+.modal-backdrop {
+	top: 0;
+}
+
+.introduction-section {
+    background: url(https://sso.tuoitre.vn/newsletter/img/registersao/Cover.svg) no-repeat;
+    background-size: cover;
+    background-position: 100% 80%;
+    padding-left: 80px;
+    position: relative;
+}
+
+.introduction-section .introduction-section-content {
+    display: flex;
+    height: 750px;
+    width: 100%;
+}
+
+.introduction-section-content .introduction-content-title {
+    padding-top: 230px;
+    position: relative;
+    z-index: 2;
+}
+
+.introduction-content-title h1 {
+    font-size: 44px;
+}
+
+.introduction-content-title p {
+   padding: 25px 90px 25px 0px;
+}
+
+.introduction-section-content .introduction-content-img {
+    padding-top: 130px; 
+    position: absolute;
+    right: 90px;
+    z-index: 0;
+}
+
+.introduction-content-title button {
+    width: 250px !important;
+    font-size: 18px !important;
+    padding: 17px 15px;
+    border-radius: 30px;
+}
+
+.introduction-content-title .btn-select { 
+    color: #fff;
+    background: #fe5b45;
+    border: none;
+    font-weight: 500;
+}
+
+.introduction-content-title .btn-discover {
+    color: #100551;
+    background: #FFF6E0;
+    border: 0.7px solid #100551;
+    font-weight: 500;
+}
+
+.introduction-section-mobi {
+    display: none;
+}
+
+.introduction-section-mobi .btn-discover {
+    color: #100551;
+    background: #FFF6E0;
+    border: 1px solid #000;
+    margin-top: 15px;
+}
+
+.ttsao-info-block {
+    padding: 0 80px;
+    margin-top: 55px;
+}
+
+.ttsao-info-block h1 {
+    color: #100551;
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.ttsao-info-block .description {
+    width: 60%;
+    color: #100551;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 20px 0;
+}
+
+.ttsao-info-block .icon-wrap {
+    width: 54px;
+    height: 54px;
+    padding-top: 12px;
+    text-align: center;
+    border-radius: 14px;
+    background: #fe5b45;
+}
+
+.title {
+    display: flex;
+    justify-content: space-betweens;
+    flex-wrap: wrap;
+}
+
+.title .title-list {
+    width: 25%;
+}
+
+.title .title-list h5 {
+    width: 90%;
+    color: #100551;
+    margin: 20px 0 16px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    height: 60px;
+}
+
+.title .title-list h6 {
+    color: #100551;
+    margin: 20px 0 16px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+}
+
+.title .title-list  p {
+    color: #7f8e9d;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    height: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title-list .modal-body .content_modal {
+    color: #7f8e9d;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title span:first-child {
+    padding: 7px 7px 10px 12px;
+    border-radius: 30px;
+    border: 1px solid #383d47;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.title-more {
+    color: #100551;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* goi */
+.ttsao-list-pack {
+    margin-top: 60px;
+    padding: 60px 0px 60px 80px;
+    background: #eed1b6;
+}
+
+.toggle label {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+    margin-top: 4px;
+}
+
+.toggle label:first-child {
+    color: #8e8e8e;
+}
+
+.form-switch .form-check-input {
+    width: 3em;
+    height: 1.5em 
+}
+
+.toggle .toggle-active {
+    color: #5380df;
+}
+
+.list-pack,
+.pack-show {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pack-show,
+.menu-sub {
+	display: none;
+}
+
+.pack {
+    width: 30%;
+    padding: 75px 58px 34px;
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.pack .money-method {
+    display: block;
+}
+
+.pack .star-method {
+    display: none;
+}
+
+.pack .pack-name b {
+    font-size: 30px;
+    color: #e04b37;
+}
+
+.pack .pack-name div:last-child {
+    width: 58px;
+    margin-top: 20px;
+    padding: 5px 6px 4px 10px;
+    border-radius: 16px;
+    background: #ffdd66;
+    color: #392c31;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.5px
+}
+
+.pack .pack-price {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #848199;
+}
+
+.pack .btn-sold {
+    width: 100%;
+    padding: 19px 33px;
+    border-radius: 100px;
+    background: #ffdd66;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #292926;
+}
+
+.pack-blue::after {
+    content: '';
+    background-image: url("https://sso.tuoitre.vn/newsletter/img/registerTTS/pack-star.svg");
+    background-color: transparent;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 80px;
+    height: 90px;
+    top: -40px;
+    right: 20px;
+}
+
+.pack-blue {
+    width: 30%;
+    background: #fe5b45;
+    padding: 75px 58px 34px;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+}
+
+.pack-blue .pack-price-discount {
+    color: #fff;
+}
+
+.pack-blue .pack-name b {
+    font-size: 30px;
+    color: #fff;
+}
+
+.pack-blue .pack-name div:last-child {
+    width: 58px;
+    margin-top: 20px;
+    padding: 5px 6px 4px 10px;
+    border-radius: 16px;
+    background: #ffdd66;
+    color: #392c31;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.5px
+}
+
+.pack-blue .pack-price {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #fff;
+}
+
+.pack-blue .btn-sold {
+    width: 100%;
+    padding: 19px 33px;
+    border-radius: 100px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #292926;
+}
+
+.star-discount-block {
+    padding: 4px 8px;
+    background: #fff3c9;
+    font-family: "Inter", sans-serif;
+    margin: 0 4px;
+    border-radius: 6px;
+}
+
+.star-discount-block b {
+    color: #100551;
+}
+
+.buy-star {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buy-star > .input-buy-star-group {
+    min-width: 40%;
+    background: #fff;
+    border-radius: 17px;
+    padding: 9px 5px 9px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-star > .input-buy-star-group > input {
+    padding: 26px 47px;
+    border-radius: 17px;
+    border: none;
+    outline: none;
+    max-width: 70%;
+}
+
+.buy-star > .input-buy-star-group > button {
+    padding: 15px 34px;
+    border-radius: 100px;
+    background: #ffdd66;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #383d47;
+}
+
+.buy-star .modal-header {
+    border-bottom: none;
+    padding: 0px !important;
+}
+
+.buy-star .modal-header h5 {
+    margin: auto;
+    color: #212529;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.buy-star .modal-body {
+    text-align: center;
+    color: #212529;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* */
+
+/* giude */
+.ttsao-list-pack h1,
+.guide h1 {
+    color:#100551;
+    text-align: center;
+    font-weight: bold;
+}
+
+.label {
+    background: #fff0e2;
+    padding: 32px 24px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.label img {
+    border-radius: 14px;
+    margin-right: 24px;
+}
+
+.button_close {
+    position: absolute;
+    top: 0;
+    right: -30px;
+}
+
+.collapse-item {
+    border-top: 1px solid #e5e5e5;
+    padding: 32px 0px;
+}
+
+.collapse-item  .nav-link:focus, 
+.collapse-item  .nav-link:hover {
+    color: #100551;
+}
+
+.card-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #7f8e9d;
+    max-width: 890px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    border: none !important;
+    padding: 0;
+}
+
+.guide {
+    padding: 20px 80px;   
+}
+
+.related-list {
+    padding: 20px 60px;   
+}
+
+.related-list h1 {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.related-list h4 {
+    color: #100551;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+
+.related-list-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.related-list-box-art1 img {
+    width: 100%;
+}
+
+.related-list-box div {
+    padding: 0 21px;
+    flex: 0 0 33.33333%;
+}
+
+.footer {
+    padding: 25px 80px 0px 80px;
+    background-color: #eed1b6;
+}
+
+/* modal */
+.modal-content {
+    padding: 16px;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-footer-icon img {
+    border-radius: 35px;
+    padding: 5px 5px 3px 3px;
+}
+
+@media only screen and (max-width: 500px) {
+    .introduction-content-title .btn-discover {
+        color: #fff;
+        background: none;
+        border: 1px solid #fff;
+    }
+
+    .title .title-list{
+        width: 100% !important;
+    }
+
+    .pack,
+    .pack-blue {
+        width: 100% !important;
+        margin-right: 28px;
+    }
+
+    .related-list-box {
+        display: block;
+    }
+
+    .footer-icon {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .introduction-section {
+        display: none;
+    }
+
+    .introduction-content-title h1 {
+        font-size: 36px;
+    }
+
+    .introduction-section-mobi {
+        display: block;
+    }
+
+    /* t & m*/ 
+    .header-mobi {
+        background-color: #eed1b6;
+    }
+
+    .introduction-mobi-title {
+        padding: 43px 24px;
+        background: #fff6e0;
+    }
+
+    .introduction-mobi-title h1 {
+        color: #100551;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .introduction-mobi-title p {
+        width: 70%;
+        color: #100551;
+        font-size: 16px;
+        padding: 20px 0px;
+    }
+
+    .introduction-mobi-title button {
+        padding: 16px;
+        font-size: 14px;
+        border-radius: 30px;
+    }
+
+    .introduction-mobi-title .btn-select { 
+        color: #fff;
+        background-color: #fe5b45;
+        border: none;
+    }
+
+    .introduction-content-title .btn-discover {
+        color: #fff;
+        background: none;
+        border: 1px solid #fff;
+    }
+
+    .ttsao-info-block {
+        padding: 0px 24px;
+    }
+
+    .ttsao-info-block .description {
+        padding-right: 0px; 
+    }
+
+    .title .title-list {
+        width: 50%;
+    }
+
+    .ttsao-list-pack {
+        padding-left: 24px;
+    }
+    .buy-star {
+       padding-right: 20px;
+    }
+
+    .buy-star > .input-buy-star-group {
+        min-width: 95%;  
+    }
+
+    .buy-star > .input-buy-star-group > button {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .label {
+        margin-bottom: 15px !important;
+    }
+
+    .footer {
+        padding: 40px 24px;
+        background-color: #eed1b6;
+    }
+
+    .related-list {
+        padding: 40px 24px;
+    }
+
+    .title .title-list h5 {
+        margin: 40px 0;
+    }
+
+    .footer p {
+        font-size: 14px;
+        font-weight: 500;
+        color: #100551;
+    }
+    
+    .footer-icon {
+        text-align: right;
+    }
+
+}
+
+@media only screen and (max-width: 1070px) {
+    .header-title {
+        padding: 40px 0px;
+    }
+
+    .title .title-list{
+        width: 30%;
+    }
+
+    .pack,
+    .pack-blue { 
+        width: 45%;
+    }
+
+    .introduction-content-title .btn-discover {
+        background: none;
+    }
+
+    .ttsao-info-block {
+        padding: 0 60px;
+    }
+
+    .title .title-list {
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (min-width: 1070px) and (max-width: 1280px) {
+    .header {
+        display: block;
+    }
+
+    .header-mobi {
+        display: none;
+    }
+
+   .header-title {
+        padding: 40px;
+   }
+
+   .introduction-content-title .btn-discover {
+        color: #fff;
+        background: none;
+        border: 1px solid #fff;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .header {
+        display: block;
+    }
+
+    .header-mobi {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+	.related-list,
+	.guide {
+		padding: 20px;
+	}
+	
+	.modal-backdrop {
+		top: 65px;
+	}
+}
+

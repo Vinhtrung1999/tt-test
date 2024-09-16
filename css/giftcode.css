@@ -1,0 +1,286 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#wrapper a {
+text-decoration: none;
+}
+
+.header {
+    background: linear-gradient(90deg, #E30E16 0%, #C90009 100%);
+}
+
+.main {
+padding-bottom: 10px;
+background-color: #E6E9F1;
+}
+
+.title-page {
+font-size: 20px;
+padding: 15px 30px;
+font-weight: 700;
+}
+
+.sidebar,
+.main-content-page {
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(76, 87, 125, 0.0);
+}
+
+.sidebar-content {
+    padding: 15px 50px 15px 30px;
+}
+
+.sidebar-content-promotion  {
+    padding: 15px 50px 5px 30px;
+}
+
+.sidebar-content span {
+    color: #7E8299;
+}
+
+.bi-star-fill {
+    color: #ffd400;
+}
+
+.container-fluid-lg {
+    background-color: #E6E9F1;
+}
+
+.sidebar-list {
+    padding: 15px 20px 15px 30px;
+}
+
+.main-content {
+    width: 900px;
+}
+
+.main-content-page-title {
+    padding: 70px;
+    min-height: calc(100vh - 195px);
+}
+
+.main-content-page-title-text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-login {
+    width: 426px;
+    height: 42px;
+    padding: 6px 15px;
+    background-color: #EAEEF2;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-login {
+    width: 155px;
+    height: 42px;
+    padding: 0;
+    background-color: #f74247;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-login:hover {
+    background-color: #2f5aa9;
+}
+
+/*modal */
+.modal-footer {
+   border-top: none;
+   margin-bottom: 15px;
+}
+
+.modal-footer button {
+   width: 155px;
+   height: 42px;
+   background-color: #0F75BC;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.modal-footer button:hover {
+   background-color: #f74247;
+}
+
+.btn:focus,  
+.btn:active,  
+.btn:hover {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.footer {
+background: #fff;
+}
+
+.footer-top a {
+font-weight: 600;
+font-size: 11px !important;
+line-height: 15px;
+padding: 8px 9px;
+text-transform: uppercase;
+font-weight: 700;
+color: #464E5F;
+}
+
+.footer-top {
+display: flex;
+margin: 0 10px;
+flex-wrap: wrap;
+padding-bottom: 10px;
+padding-top: 10px;
+border-bottom: 2px solid #ed1c24;
+margin-bottom: 20px;
+} 
+
+.footer-content {
+margin: 0 20px;
+}
+
+.footer-middle {
+justify-content: space-between;
+align-items: start;
+border-bottom: 1px solid #eee;
+}
+
+.footer-picture {
+display: flex;
+flex-wrap: wrap;
+padding: 10px 0;
+border-bottom: 1px solid #eee;
+}
+
+.footer-picture a {
+padding: 8px 11px;
+}
+
+.footer-bottom {
+padding: 10px 0;
+}
+
+.footer p {
+margin: 0;
+font-size: 13px;
+color: #565656;
+}
+
+.list a {
+margin: 0;
+font-size: 13px;
+color: #565656;
+font-weight: 550;
+}
+
+.text a {
+font-weight: 600;
+font-size: 13px;
+color: #565656;
+}
+
+.text {
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+color: #8F8F8F;
+}
+
+.active-footer a {
+color: #ED1C24 !important;
+padding-left: 0 !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .container-fluid-lg,
+    .container-lg {
+        background-color: white;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .main-content-page {
+        margin-top: 5px;
+    }
+
+    .main-content-page h5 {
+        padding-left: 40px;
+    }
+
+    .main-content-page-title {
+        padding: 20px 0 0 0;
+        min-height: calc(100vh - 195px);
+    }
+
+    .input-login {
+        width: 100%; 
+    }
+    
+   .btn-login {
+        padding: 0px 5px;
+        margin-top: 20px;
+    }  
+    
+    .footer-top,
+.footer-picture,
+.footer-bottom-border  {
+    display: none !important;
+}
+
+.footer-middle { 
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.footer-right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.footer-logo {
+    padding: 0 10px;
+    border-top: 1px dashed #E2E2E2;
+    border-bottom: 1px dashed #E2E2E2;
+}
+
+.footer-content {
+    margin: 0 ;
+}
+
+.footer-left,
+.footer-center,
+.footer-right,
+.footer-bottom {
+    padding: 0 15px !important;
+}
+
+.footer-left p,
+.footer-center p,
+.footer-bottom .text {
+    margin: 10px 10px 10px 0px;
+}
+
+.footer-right .support a::after {
+    content: "";
+    display: inline-block;
+    width: 2px; 
+    height: 16px; 
+    background-color: #817f7f; 
+    margin-left: 5px; 
+    vertical-align: middle; 
+    margin-right: 5px;
+}
+}

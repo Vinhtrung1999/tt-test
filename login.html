@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập Tuổi Trẻ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/33ad855007.js" crossorigin="anonymous"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css./login.css">  
+</head>
+<body>
+    <div class="header">
+        <div class="py-2 text-center">
+            <a href="index.html">
+                <img src="https://sso.tuoitre.vn/images/logo.svg" alt="Logo">
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row g-0 my-5">
+                <div class="col-lg-5 m-auto shadow">
+                       <div class="px-md-5 py-md-4">
+                        <div class="row g-0 nav-tabs">
+                            <div class="col-6 text-center">
+                               <button type="button" class="login active">Đăng nhập</button>
+                            </div>
+                            <div class="col-6 text-center">
+                                <button type="button" class="create-account">Tạo tài khoản</button>
+                            </div>
+                        </div>
+                    
+                        <!-- Phần nội dung -->
+                        <!-- ĐĂNG NHẬP -->
+                       <div class="content-login">  
+                           <div class="row g-0 mt-5">
+                               <div class="col-lg-12">
+                                    <input class="form form-log" type="text" placeholder="Nhập email hoặc số điện thoại" aria-label="default input example">
+                               </div>
+                               <div class="col-lg-12 mt-4 position-relative">
+                                    <input class="form form-pass inputPassLogin" type="password" placeholder="Nhập mật khẩu" aria-label="default input example">
+                                    <span class="show-pwd-icon">
+                                        <i id="showPasswordLogin" class="fa fa-fw fa-eye"></i>
+                                    </span>
+                               </div>
+                               <div class="col-lg-12 error">
+                                    <h6 style="font-size: 16px;">Email hoặc số điện thoại không đúng định dạng.</h6>
+                               </div>
+                               <div class="col-lg-12 pt-3">
+                                   <p class="text-center note-link">
+                                    <a class="text-link1" href="">
+                                        Bạn chưa có hoặc quên mật khẩu? Cài đặt lại mật khẩu qua email hoặc SMS.
+                                    </a>
+                                   </p>
+                               </div>
+                               <div class="col-lg-12">
+                                    <button type="button" class="btn btn-lg btn-login">Đăng nhập</button>
+                               </div>
+                               <div class="col-lg-12 py-4 px-0">
+                                    <h6 class="text-link2">Hoặc đăng nhập với tài khoản mạng xã hội</h6>
+                               </div>
+                               <div class="col-lg-12">   
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://sso.tuoitre.vn/images/facebook.png" width="50" height="50"> 
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://sso.tuoitre.vn/images/Ellipse_2.png" width="50" height="50">
+                                            </a>
+                                        </div>
+                                    </div>      
+                               </div>
+                           </div>    
+                       </div>
+                       <!-- TẠO TÀI KHOẢN -->
+                       <div class="content">
+                            <div class="row mt-3">
+                                <div class="col-lg-12 pb-2">
+                                   <h6 class="text-link2">Đăng ký tài khoản báo Tuổi Trẻ để sử dụng đầy đủ tính năng của thành viên, nhận tin tức mới nhất trên các lĩnh vực và có cơ hội tham gia sớm các sự kiện báo Tuổi Trẻ tổ chức</h6>
+                                </div>
+                                <div class="col-lg-12">
+                                   <input class="form form-log" type="text" placeholder="Nhập email hoặc số điện thoại">
+                                </div>
+                                <div class="col-lg-12 mt-4 position-relative">
+                                   <input class="form form-pass inputPassAcc" type="password" placeholder="Nhập mật khẩu" aria-label="default input example">
+                                   <span class="show-pwd-icon">
+                                        <i id="showPasswordAcc" class="fa fa-fw fa-eye"></i>
+                                    </span>
+                                </div>
+                                <div class="col-lg-12 d-flex gap-2 pt-4">
+                                    <div class="pt-2">
+                                        <h6>Mã xác thực:</h6>
+                                    </div>
+                                    <div class="pt-2">
+                                        <h6> <span class="value-1"></span> + <span class="value-2"></span>=</h6>
+                                    </div>
+                                    <div>
+                                        <input type="text" style="width:100px;height:50px;" class="form mb-2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 error">
+                                    <h6 style="font-size: 16px;">Mã xác thực không đúng.</h6>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="button" class="btn btn-lg text-white btn-register">Đăng ký</button>
+                               </div>
+                               <div class="col-lg-12 pt-3">
+                                    <h6 class="text-link2">Hoặc đăng nhập với tài khoản mạng xã hội</h6>
+                               </div>
+                               <div class="col-lg-12 text-center pt-3">   
+                                   <div class="d-flex justify-content-center gap-3">
+                                    <div>
+                                        <a href="#">
+                                            <img src="https://sso.tuoitre.vn/images/facebook.png" width="50" height="50"> 
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="https://sso.tuoitre.vn/images/Ellipse_2.png" width="50" height="50">
+                                        </a>
+                                    </div>
+                                   </div>       
+                               </div>
+                               <div class="col-lg-12 pt-2">
+                                    <p class="text-link2 text-decoration-underline">Khi nhấn đăng ký bạn đã đồng ý các quy định của báo Tuổi Trẻ</p>
+                               </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="footer">
+        <div class="container-lg">
+            <div class="footer-top">
+                <div class="active-footer">
+                    <a href="index.html">Trang chủ</a>
+                </div>
+                <div>
+                    <a href="detail_video.html">Media</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Thời sự</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Thế giới</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Pháp luật</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Kinh doanh</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Công nghệ</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Xe</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Du lịch</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Nhịp sống trẻ</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Văn hóa</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Giải trí</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Thể thao</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Giáo dục</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Khoa học</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Sức khỏe</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Giả thật</a>
+                </div>
+                <div>
+                    <a href="detail_thoisu.html">Bạn đọc</a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="d-lg-flex footer-middle">
+                    <div class="d-lg-none footer-logo">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="">
+                                <a href="index.html">
+                                  <img width="88" height="40" src="https://static-tuoitre.tuoitre.vn/tuoitre/web_images/logotuoitrepro-02.svg" alt="">
+                                </a>
+                              </div>
+                              <div class="">
+                                <div class="d-flex justify-content-between gap-2">
+                                  <div>
+                                    <a href="#">
+                                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="1.16699" width="23" height="23" rx="11.5" stroke="#666666"></rect>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75984 16.9011C6.52448 16.8314 6.30973 16.7076 6.13372 16.5399C5.9577 16.3722 5.82559 16.1657 5.74851 15.9377C5.3081 14.7594 5.1776 9.83915 6.02581 8.86784C6.30811 8.55186 6.70668 8.35732 7.13501 8.32645C9.41049 8.0876 16.4408 8.11945 17.2483 8.40606C17.4754 8.47799 17.6828 8.59915 17.8552 8.76047C18.0275 8.92178 18.1602 9.11908 18.2433 9.33757C18.7245 10.5557 18.7408 14.9823 18.178 16.1527C18.0287 16.4573 17.7788 16.7041 17.4685 16.8533C16.6203 17.2673 7.88534 17.2594 6.75984 16.9011ZM10.3729 14.5922L14.4508 12.5222L10.3729 10.4363V14.5922Z" fill="#666666"></path>
+                                      </svg>
+                                    </a>
+                                  </div>
+                                  <div>
+                                    <a href="#">
+                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#565656"></rect>
+                                        <path d="M17.6 11.8C17.6 13.1377 17.6 14.4754 17.6 15.813C17.6 16.8852 16.875 17.6 15.813 17.6C13.1377 17.6 10.4725 17.6 7.79718 17.6C6.725 17.6 6 16.875 6 15.813C6 13.1377 6 10.4725 6 7.79718C6 6.725 6.725 6 7.78697 6C10.4623 6 13.1275 6 15.8028 6C16.875 6 17.5898 6.725 17.5898 7.78697C17.6 9.12465 17.6 10.4623 17.6 11.8ZM14.8532 11.8102C14.843 10.1151 13.4644 8.75704 11.7694 8.76725C10.1049 8.77746 8.74683 10.1458 8.74683 11.8204C8.74683 13.5155 10.1254 14.8838 11.8204 14.8838C13.4951 14.8736 14.8634 13.4951 14.8532 11.8102ZM15.5373 8.76725C15.9049 8.76725 16.2113 8.46092 16.2113 8.0831C16.2113 7.70528 15.9049 7.40915 15.5373 7.40915C15.1697 7.40915 14.8634 7.71549 14.8634 8.09331C14.8634 8.46092 15.1697 8.76725 15.5373 8.76725Z" fill="#565656"></path>
+                                        <path d="M9.42065 11.8323C9.42065 10.5253 10.4826 9.45312 11.7897 9.45312C13.1069 9.45312 14.1791 10.5253 14.1791 11.8426C14.1689 13.1394 13.1069 14.2014 11.7999 14.2014C10.4928 14.2014 9.42065 13.1394 9.42065 11.8323Z" fill="#565656"></path>
+                                      </svg>
+                                    </a>
+                                  </div>
+                                  <div>
+                                    <a href="#">
+                                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="1.16699" width="23" height="23" rx="11.5" stroke="#666666"></rect>
+                                        <path d="M12.9966 12.8847H15.2299L15.5805 10.6021H12.9961V9.35462C12.9961 8.40641 13.3041 7.56559 14.1857 7.56559H15.6023V5.57366C15.3534 5.53985 14.827 5.46582 13.8323 5.46582C11.7553 5.46582 10.5375 6.5694 10.5375 9.08364V10.6021H8.40234V12.8847H10.5375V19.1584C10.9604 19.2224 11.3887 19.2658 11.8284 19.2658C12.2258 19.2658 12.6137 19.2293 12.9966 19.1772V12.8847Z" fill="#666666"></path>
+                                      </svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>                   
+                    </div>
+                    <div class="footer-left">
+                        <p>Tổng biên tập: Lê Thế Chữ</p>
+                        <p>Giấy phép hoạt động báo điện tử tiếng Việt, tiếng Anh Số 561/GP-BTTTT, cấp ngày 25-11-2022.</p>
+                        <p class="list">
+                          <a href="#">Thông tin tòa soạn - Thành Đoàn TP.HCM</a>
+                        </p>
+                    </div>
+                    <div class="footer-center">
+                        <p >Địa chỉ: 60A Hoàng Văn Thụ, P.9, Q.Phú Nhuận, Tp. Hồ Chí Minh</p>
+                        <p>Hotline: 0918.033.133 - Email: tto@tuoitre.com.vn</p>
+                        <p>Phòng Quảng Cáo Báo Tuổi Trẻ: 028.39974848</p>
+                    </div>
+                    <div class="footer-right">
+                        <p class="text support">
+                            <a href="#">Liên Hệ Quảng Cáo</a>
+                        </p>
+                        <p class="text support">
+                            <a href="#">Chính Sách Bảo Mật</a>
+                        </p>
+                        <p class="text">
+                            <a href="#">Liên Hệ Góp Ý</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-picture">
+                    <div>
+                        <a href="index.html">
+                            <img src="https://sso.tuoitre.vn/images/ftt.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="detail_video.html">
+                            <img src="https://sso.tuoitre.vn/images/ftttv.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="podcast.html">
+                            <img src="https://sso.tuoitre.vn/images/fttpodcast.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://sso.tuoitre.vn/images/fttc.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://sso.tuoitre.vn/images/fttct.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://sso.tuoitre.vn/images/fttn.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://sso.tuoitre.vn/images/fmuctim.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="raovat.html">
+                            <img src="https://sso.tuoitre.vn/images/fttmedia.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img class="a" src="https://sso.tuoitre.vn/images/fttrv.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="d-lg-flex justify-content-between footer-bottom">
+                    <div class="d-lg-flex">
+                        <div class="text">© Copyright 2024 TuoiTre Online, All rights reserved </div>
+                        <div class="text">® Tuổi Trẻ Online giữ bản quyền nội dung trên website này</div>
+                    </div>
+                    <div class="d-flex justify-content-between gap-2 footer-bottom-border">
+                        <div>
+                          <a href="#">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="0.5" y="1.16699" width="23" height="23" rx="11.5" stroke="#666666"></rect>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75984 16.9011C6.52448 16.8314 6.30973 16.7076 6.13372 16.5399C5.9577 16.3722 5.82559 16.1657 5.74851 15.9377C5.3081 14.7594 5.1776 9.83915 6.02581 8.86784C6.30811 8.55186 6.70668 8.35732 7.13501 8.32645C9.41049 8.0876 16.4408 8.11945 17.2483 8.40606C17.4754 8.47799 17.6828 8.59915 17.8552 8.76047C18.0275 8.92178 18.1602 9.11908 18.2433 9.33757C18.7245 10.5557 18.7408 14.9823 18.178 16.1527C18.0287 16.4573 17.7788 16.7041 17.4685 16.8533C16.6203 17.2673 7.88534 17.2594 6.75984 16.9011ZM10.3729 14.5922L14.4508 12.5222L10.3729 10.4363V14.5922Z" fill="#666666"></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#565656"></rect>
+                              <path d="M17.6 11.8C17.6 13.1377 17.6 14.4754 17.6 15.813C17.6 16.8852 16.875 17.6 15.813 17.6C13.1377 17.6 10.4725 17.6 7.79718 17.6C6.725 17.6 6 16.875 6 15.813C6 13.1377 6 10.4725 6 7.79718C6 6.725 6.725 6 7.78697 6C10.4623 6 13.1275 6 15.8028 6C16.875 6 17.5898 6.725 17.5898 7.78697C17.6 9.12465 17.6 10.4623 17.6 11.8ZM14.8532 11.8102C14.843 10.1151 13.4644 8.75704 11.7694 8.76725C10.1049 8.77746 8.74683 10.1458 8.74683 11.8204C8.74683 13.5155 10.1254 14.8838 11.8204 14.8838C13.4951 14.8736 14.8634 13.4951 14.8532 11.8102ZM15.5373 8.76725C15.9049 8.76725 16.2113 8.46092 16.2113 8.0831C16.2113 7.70528 15.9049 7.40915 15.5373 7.40915C15.1697 7.40915 14.8634 7.71549 14.8634 8.09331C14.8634 8.46092 15.1697 8.76725 15.5373 8.76725Z" fill="#565656"></path>
+                              <path d="M9.42065 11.8323C9.42065 10.5253 10.4826 9.45312 11.7897 9.45312C13.1069 9.45312 14.1791 10.5253 14.1791 11.8426C14.1689 13.1394 13.1069 14.2014 11.7999 14.2014C10.4928 14.2014 9.42065 13.1394 9.42065 11.8323Z" fill="#565656"></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="#">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="0.5" y="1.16699" width="23" height="23" rx="11.5" stroke="#666666"></rect>
+                              <path d="M12.9966 12.8847H15.2299L15.5805 10.6021H12.9961V9.35462C12.9961 8.40641 13.3041 7.56559 14.1857 7.56559H15.6023V5.57366C15.3534 5.53985 14.827 5.46582 13.8323 5.46582C11.7553 5.46582 10.5375 6.5694 10.5375 9.08364V10.6021H8.40234V12.8847H10.5375V19.1584C10.9604 19.2224 11.3887 19.2658 11.8284 19.2658C12.2258 19.2658 12.6137 19.2293 12.9966 19.1772V12.8847Z" fill="#666666"></path>
+                            </svg>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        // Dang nhap, dang ky
+        let btnLogin = $('.login');
+        let btnAccount = $('.create-account');
+        let contentLog = $('.content-login');
+        let contentAcc = $('.content');
+
+        contentAcc.css('display', 'none');
+        btnAccount.on('click', function() {
+            contentAcc.css('display', 'block');
+            contentLog.css('display', 'none');
+
+            btnAccount.addClass('active');
+            btnLogin.removeClass('active');
+        })
+
+        btnLogin.on('click', function() {
+            contentLog.css('display', 'block');
+            contentAcc.css('display', 'none');
+            
+            btnLogin.addClass('active');
+            btnAccount.removeClass('active');
+        })
+
+        // Hien loi
+        let btnSubmitLog = contentLog.find('.btn-login');
+        let btnSubmitAcc = contentAcc.find('.btn-register');
+        let formLog = $('.form-log');
+        let formPass = $('.form-pass')
+        let errorLogin = contentLog.find('.error');
+        let errorAcc = contentAcc.find('.error');
+
+        btnSubmitLog.on('click', function() {
+            if(formLog.val() == '' || formPass.val() == '') {
+               errorLogin.css('display','block');
+            }
+        })
+
+        btnSubmitAcc.on('click', function() {
+            if(formLog.val() == '' || formPass.val() == '') {
+                errorAcc.css('display','block');
+            }
+        })
+
+    // Eye
+    let inputPassLogin = $('.inputPassLogin');
+    let showPasswordLogin = $('#showPasswordLogin');
+    let inputPassAcc = $('.inputPassAcc');
+    let showPasswordAcc = $('#showPasswordAcc');
+        
+    
+    showPasswordLogin.on('click', function() {
+       if(inputPassLogin.attr('type') === 'password') {
+           inputPassLogin.attr('type', 'text');
+           showPasswordLogin.removeClass('fa-eye');
+           showPasswordLogin.addClass('fa-eye-slash');
+       } else {
+           inputPassLogin.attr('type', 'password')
+           showPasswordLogin.addClass('fa-eye');
+           showPasswordLogin.removeClass('fa-eye-slash');
+       }
+    })
+
+    showPasswordAcc.on('click', function() {
+       if(inputPassAcc.attr('type') === 'password') {
+           inputPassAcc.attr('type', 'text');
+           showPasswordAcc.removeClass('fa-eye');
+           showPasswordAcc.addClass('fa-eye-slash');
+       } else {
+           inputPassAcc.attr('type', 'password');
+           showPasswordAcc.classList.addClass('fa-eye');
+           showPasswordAcc.classList.removeClass('fa-eye-slash');
+       }
+    })
+
+    let value1 = $('.value-1');
+    let value2 = $('.value-2');
+
+    value1.text(Math.floor(Math.random() * 11));
+    value2.text(Math.floor(Math.random() * 11));
+    })
+</script>
+</html>

@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức, audio, podcast - Podcast - Tuổi Trẻ Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/33ad855007.js" crossorigin="anonymous"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css./podcast.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <div class="container-lg header">
+        <div class="d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+                <div>
+                  <a href="detail_video.html">
+                    <img src="https://static.mediacdn.vn/tuoitre/web_images/LogoTTTV.png" alt="" width="80">
+                  </a>
+                </div>
+                <div class="pe-2">
+                  <a href="#">
+                    <img src="https://static.mediacdn.vn/tuoitre/web_images/logo2_ttct_2021.png" alt="" width="60">
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="https://static.mediacdn.vn/tuoitre/web_images/LogoTTNews.png" alt="" width="80">
+                  </a>
+                </div>
+                <div>
+                  <img src="https://static.mediacdn.vn/thumb_w/150/tuoitre/web_images/logo_tuoitrecuoi-01.png" alt="" width="60">
+                </div>
+                <div>
+                  <a href="index.html">
+                    <img src="https://static-tuoitre.tuoitre.vn/tuoitre/images/logo-mg.png" alt="" width="60">
+                  </a>
+                </div>
+            </div>
+            <div class="d-flex gap-2 mt-1">
+                <div>
+                    <p>Hotline: 0918.033.133</p>
+                </div>
+                <div>
+                    <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg> Đặt báo
+                    </p>
+                </div>
+                <div>
+                    <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                      </svg> Đăng nhập | Đăng ký
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid header-middle">
+          <div class="d-flex main-header justify-content-around align-items-center">
+              <div>
+                  <a href="index.html">
+                      <img src="https://static.mediacdn.vn/tuoitre/web_images/logo-podcast.png" width="101">
+                  </a>
+              </div>
+              <div class="d-lg-flex gap-4">
+                  <div>
+                      <a href="#">
+                        <p class="text-uppercase text-white pt-2">Youtube báo tuổi trẻ</p>
+                      </a>
+                  </div>
+                  <div>
+                      <a href="#">
+                        <p class="text-uppercase text-white pt-2">Nhà đất</p>
+                      </a>
+                  </div>
+                  <div>
+                      <a href="#">
+                        <p class="text-uppercase text-white pt-2">Cần biết</p>
+                      </a>
+                  </div>
+                  <div class="position-relative">
+                      <span><input type="text" class="form-control" placeholder="Tìm kiếm podcast"></span>
+                      <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-lg-none border-bottom main-header-min">
+        <div class="header-top">
+          <div>
+            <a href="#">
+              <img src="https://static.mediacdn.vn/tuoitre/web_images/logo2_ttct_2021.png" alt="">
+            </a>
+          </div>
+          <div class="d-flex gap-3">
+            <div class="main-header-min-items">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="main-header-min-items">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+              </a>
+            </div>
+            <div>
+                <a href="#">
+                  <svg style="color: #333" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+                </a>
+            </div>
+            <div>
+              <a href="#">
+                <svg style="color: #333" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <div class="menu-main" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+              </div>
+              <div class="menu-sub" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"aria-controls="offcanvasRight">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x text-white" viewBox="0 0 16 16">
+                  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+              </div>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-body p-0">
+                  <div class="offcanvas-body-items-fri">
+                    <a href="login.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                      </svg> Đăng nhập | Đăng ký
+                    </a>
+                  </div>
+                  <div>
+                    <div class="offcanvas-body-items-sec">
+                      <a href="#">Nghề GenZ</a>
+                    </div>
+                    <div class="offcanvas-body-items-sec">
+                      <a href="#">Thể thao hôm nay</a>
+                    </div>
+                    <div class="offcanvas-body-items-sec">
+                      <a href="#">Chuyện Gia Đình</a>
+                    </div>
+                    <div class="offcanvas-body-items-sec">
+                      <a href="#">Món Ngon Quê Mình</a>
+                    </div>
+                    <div class="offcanvas-body-items-sec">
+                      <a href="#">Tin Nhanh Mỗi Ngày</a>
+                    </div>
+                    <div class="offcanvas-body-items-sec">
+                      <a href="#">Nhịp Sống Mưu Sinh</a>
+                    </div>
+                    <div class="offcanvas-body-items-sec">
+                      <a href="#">Công nghệ</a>
+                    </div>
+                    <div class="offcanvas-body-items-sec">
+                      <a href="#">Sức Khỏe Của Bạn</a>
+                    </div>
+                    <div class="offcanvas-body-items-sec">
+                      <a href="#">Hơn Một Chuyến Đi Xa</a>
+                    </div>
+                    <div class="offcanvas-body-items-sec">
+                      <a href="#">Thị Trường Hôm Nay</a>
+                    </div>
+                    <div class="offcanvas-body-items-sec">
+                      <a href="#">Nói Cho Nghe</a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="offcanvas-body-items-third">
+                      <a href="#">Cần biết</a>
+                    </div>
+                    <div class="offcanvas-body-items-third">
+                      <a href="#">Nhà đất</a>
+                    </div>
+                    <div class="offcanvas-body-items-third">
+                      <a href="#">Rao vặt</a>
+                    </div>
+                    <div class="offcanvas-body-items-third">
+                      <a href="#">Quảng cáo</a>
+                    </div>
+                    <div class="offcanvas-body-items-third">
+                      <a href="#">Đặt báo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </header>
+    <!-- content -->
+    <div class="container mt-4 main-content">
+        <div class="topPodcast">
+          <div class="d-lg-flex flex-lg-row gap-4">
+              <div>
+                <a href="#">
+                  <img class="img-main" src="https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/21/photo1724228024151-1724228024301288391283.png" alt="">
+                </a>
+              </div>
+              <div>
+                <div class="d-none d-lg-block">
+                  <div class="btn-item-share">
+                    <div>
+                      <a href="#">Khỏe đẹp</a>
+                    </div>
+                    <div>
+                      <a href="#">
+                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.42468 4.37788C9.61994 4.18261 9.61994 3.86603 9.42468 3.67077L6.2427 0.488789C6.04744 0.293526 5.73085 0.293526 5.53559 0.488789C5.34033 0.684051 5.34033 1.00063 5.53559 1.1959L8.36402 4.02432L5.53559 6.85275C5.34033 7.04801 5.34033 7.36459 5.53559 7.55986C5.73085 7.75512 6.04744 7.75512 6.2427 7.55986L9.42468 4.37788ZM0.0612793 4.52432L9.07113 4.52432V3.52432L0.0612793 3.52432L0.0612793 4.52432Z" fill="black"></path>
+                      </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#">
+                  <h2>Uống trà, cà phê sau bữa ăn có thể gây thiếu sắt</h2>
+                </a>
+                <p class="box-item-sapo">Sắt - một khoáng chất thiết yếu cho cơ thể, đặc biệt quan trọng đối với quá trình tạo máu. Tuy nhiên, nhiều người không biết rằng thói quen uống cà phê, trà ngay sau bữa ăn có thể làm giảm đáng kể khả năng hấp thu sắt.</p>
+                <a href="#">
+                  <button class="d-lg-block d-none btn-podcast">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.0131 0.5C5.38869 0.5 0 5.88331 0 12.5C0 19.1167 5.38869 24.5 12.0131 24.5C18.6376 24.5 24.0263 19.1167 24.0263 12.5C24.0263 5.88331 18.6376 0.5 12.0131 0.5ZM16.7889 12.9204L9.78122 17.4204C9.6991 17.4736 9.60426 17.5 9.51041 17.5C9.42829 17.5 9.34518 17.4795 9.2709 17.439C9.10957 17.3511 9.00985 17.1831 9.00985 17V8C9.00985 7.81691 9.10957 7.64891 9.2709 7.56102C9.42927 7.47411 9.62773 7.47945 9.78122 7.57958L16.7889 12.0796C16.9316 12.1714 17.0186 12.3301 17.0186 12.5C17.0186 12.6699 16.9316 12.8286 16.7889 12.9204Z" fill="#FF0000"></path>
+                  </svg> Nghe tập này</button>
+                </a>
+              </div>
+          </div>
+        </div>
+        <div class="podcast-new">
+          <div class="line"></div>
+          <div class="pt-4 pt-lg-0 main-content-title">
+            <h3><b>PODCAST</b><span>mới nhất</span></h3>
+          </div>
+          <div class="pt-3 pt-lg-0 items-podcast">
+            <div class="row gx-lg-5">
+            </div>
+          </div>
+        </div>
+        <div class="podcast-topic">
+          <div class="d-none d-lg-block">
+            <h2>Chủ đề</h2>
+          </div>
+          <div class="d-lg-none">
+            <div class="main-content-title">
+              <h3><b>NGHE THEO</b><span>CHỦ ĐỀ</span></h3>
+            </div>
+          </div>
+          <div class="row gx-lg-5">
+            <div class="col-12 col-lg-4">
+              <div class="topTitle">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/2022/12/9/1-1670560847091357912453.png">
+                   </a>
+                </div>
+                <div class="title-topic">Chia sẻ về xu hướng nghề nghiệp mới trong những năm gần đây, giúp các bạn trẻ có cái nhìn toàn cảnh để định hướng bản thân trong tương lai</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="topTitle">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/471584752817336320/2024/1/5/datvanguoi-17044423339951294416540.jpg">
+                   </a>
+                </div>
+                <div class="title-topic">Những câu chuyện về các vùng đất, từ những con người chân chất mà thân thương đến những gương mặt tài hoa, kiệt xuất, bất khuất, kiêu hùng…</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="topTitle">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/471584752817336320/2023/5/26/the-thao-hom-nay-16850742112281340759171.jpg">
+                   </a>
+                </div>
+                <div class="title-topic">Cập nhật những câu chuyện hậu trường, các sự kiện thể thao đang diễn ra trên khắp thế giới.</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="topTitle">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/2022/8/29/final-09-16617391975581663636314.png">
+                   </a>
+                </div>
+                <div class="title-topic">Nơi chia sẻ, tâm sự những câu chuyện về tình yêu, gia đình, cuộc sống vợ chồng và chăm sóc con cái.</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="topTitle">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/2022/8/29/final-08-16617391975561400881732.png">
+                   </a>
+                </div>
+                <div class="title-topic">Giới thiệu ẩm thực các vùng miền và những câu chuyện về văn hóa địa phương qua mỗi món ăn.</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="topTitle">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/2022/8/29/final-01-1661739197545444520787.png">
+                   </a>
+                </div>
+                <div class="title-topic">Bản tin tập hợp nhanh các tin tức hay, nóng trong ngày về: Văn hóa, xã hội, pháp luật, kinh doanh…</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="topTitle">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/2022/8/29/final-02-16617391975481831142583.png">
+                   </a>
+                </div>
+                <div class="title-topic">Có những âm thanh hòa vào nhịp sống huyên náo nơi thị thành, đó có thể là tiếng rao trong đêm, tiếng hủ tiếu gõ, tiếng đàn thuê…</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="topTitle">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/2022/11/9/cong-nghe2-01-1667990699641285677676.png">
+                   </a>
+                </div>
+                <div class="title-topic">Cập nhất nhanh về công nghệ mới, hiện đại ở trong và ngoài nước, giúp bạn ứng dụng nhanh với công việc.</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="topTitle">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/2022/8/29/final-04-166173919755181120160.png">
+                   </a>
+                </div>
+                <div class="title-topic">Bí quyết về chăm lo cho sức khỏe, làm đẹp, phòng tránh bệnh tật…</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="topTitle">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/2022/10/24/hon-mot-chuyen-di-xa2-05-1666591723136727727877.png">
+                   </a>
+                </div>
+                <div class="title-topic">Mỗi tập podcast sẽ gói ghém cả một cuộc hành trình, đưa bạn khám phá khắp mọi miền đất nước…</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="topTitle">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/2022/8/29/final-06-1661739197553362788494.png">
+                   </a>
+                </div>
+                <div class="title-topic">Cập nhật nhanh những biến động liên quan đến thị trường trong và ngoài nước về: Chứng khoán, bất động sản, giá xăng dầu...</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="topTitle title_hidden">
+                <div class="">
+                   <a href="#">
+                     <img src="https://cdn.tuoitre.vn/zoom/300_300/2022/8/29/final-07-16617391975551443374217.png">
+                   </a>
+                </div>
+                <div class="title-topic">Tâm sự và tản mạn mọi thứ xung quanh ta. Chia sẻ để lắng đọng, để tiếp thêm sức mạnh cho ngày mai.</div>
+              </div>
+            </div>
+            <div class="col-12 line"></div>
+          </div> 
+        </div>
+        <div class="box_wrap d-lg-none">
+          <div class="d-flex taskbar">
+            <div>
+              <h4>Cơ hội mua sắm</h4>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          </div>
+          <div class="tab_content_mobi">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="cohoi_small">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/070824_robot_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6>Có nên mua máy nước lọc nước điện giá rẻ</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cohoi_small">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/310724_bologna_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6>Bột Dinh dưỡng Sâm Ngọc Linh - Năng lượng cho ngày mới</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cohoi_small">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/060624_robot_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6>Sỡ hữu ngay máy lọc nước ion kiềm 'chuẩn quốc tế' chỉ 10 triệu đồng</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cohoi_small">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/050724_panda_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6>Máy lọc nước điện giải ion kiềm 'Thay đổi nước lọc - Nâng tầm cuộc sống chỉ từ 9,9 triệu</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="cohoi_small">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/030724_premiervillage_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6>Kỳ nghỉ hè đầy nắng cho gia đình tại Premier Village Phu Quoc</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cohoi_small ">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/260624_dlvn_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6>Lữ hành Việt Nam tung chùm tour kích cầu, giảm sâu đến 50%</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cohoi_small ">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/070624_panda_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6>Máy lọc nước điện giải ion kiềm cao cấp chỉ từ 9,9 triệu</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cohoi_small">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/210624_dlvn_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6>Kỳ nghỉ 5N4Đ ở Lệ Giang và Shangrila - Đi một lần mê mẩn cả đời</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="cohoi_small ">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/070624_panda_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6>Máy lọc nước điện giải ion kiềm cao cấp chỉ từ 9,9 triệu</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cohoi_small">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/210624_dlvn_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6>Kỳ nghỉ 5N4Đ ở Lệ Giang và Shangrila - Đi một lần mê mẩn cả đời</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cohoi_small">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/100423_robot_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6 class="mb-0">Máy làm mát thế hệ mới, giải pháp làm mát nhanh thay thế điều hòa</h6>
+                        </a>
+                        <div class="price">2.500.000đ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cohoi_small">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                        <a href="#">
+                          <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/121019_vuayen_daidien.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <a href="#">
+                          <h6 class="mb-0">Yến sào giảm giá tri ân khách hàng nhân dịp Lễ 30/4 và 1/5</h6>
+                        </a>
+                        <div class="price">1.323.000đ</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box_wrap d-none d-lg-block">
+          <div class="d-flex taskbar">
+            <div class="cohoi active_cohoi" data-cohoi="0">
+              <h4>Cơ hội mua sắm</h4>
+            </div>
+            <div class="cohoi chdl" data-cohoi="1">
+              <h4>Cơ hội du lịch</h4>
+            </div>
+            <div class="cohoi chht" data-cohoi="2">
+              <h4>Cơ hội học tập</h4>
+            </div>
+          </div>
+          <div class="tab_content">
+            <div class="row g-0">
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/070824_robot_daidien.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Có nên mua máy nước lọc nước điện giá rẻ</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/310724_bologna_daidien.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Bột Dinh dưỡng Sâm Ngọc Linh - Năng lượng cho ngày mới</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/060624_robot_daidien.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Sỡ hữu ngay máy lọc nước ion kiềm 'chuẩn quốc tế' chỉ 10 triệu đồng</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="https://cohoi.tuoitre.vn/detail/11328/1171/23/May-loc-nuoc-dien-giai-ion-kiem-%E2%80%B2Thay-doi-nuoc-loc---Nang-tam-cuoc-song%E2%80%B2-chi-tu-9--9-trieu.html">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/050724_panda_daidien.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="https://cohoi.tuoitre.vn/detail/11328/1171/23/May-loc-nuoc-dien-giai-ion-kiem-%E2%80%B2Thay-doi-nuoc-loc---Nang-tam-cuoc-song%E2%80%B2-chi-tu-9--9-trieu.html">
+                      <h6>Máy lọc nước điện giải ion kiềm 'Thay đổi nước lọc - Nâng tầm cuộc sống chỉ từ 9,9 triệu</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/030724_premiervillage_daidien.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Kỳ nghỉ hè đầy nắng cho gia đình tại Premier Village Phu Quoc</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small ">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/260624_dlvn_daidien.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Lữ hành Việt Nam tung chùm tour kích cầu, giảm sâu đến 50%</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small ">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/070624_panda_daidien.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Máy lọc nước điện giải ion kiềm cao cấp chỉ từ 9,9 triệu</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/210624_dlvn_daidien.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Kỳ nghỉ 5N4Đ ở Lệ Giang và Shangrila - Đi một lần mê mẩn cả đời</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/100423_robot_daidien.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6 class="mb-0">Máy làm mát thế hệ mới, giải pháp làm mát nhanh thay thế điều hòa</h6>
+                    </a>
+                    <div class="price">2.500.000đ</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/121019_vuayen_daidien.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6 class="mb-0">Yến sào giảm giá tri ân khách hàng nhân dịp Lễ 30/4 và 1/5</h6>
+                    </a>
+                    <div class="price">1.323.000đ</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab_content" style="display: none;">
+          </div>
+          <div class="tab_content" style="display: none;">
+            <div class="row g-0">
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="https://cohoi.tuoitre.vn/detail/11109/966/12/Apollo-Active---Mo-hinh-hoc-tien-tien-giup-tre-yeu-thich-hoc-tieng-Anh.html">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/170423_apollo_avatar.jpg" alt="Apollo Active - Mô hình học tiên tiến giúp trẻ yêu thích học tiếng Anh" title="Apollo Active - Mô hình học tiên tiến giúp trẻ yêu thích học tiếng Anh">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Apollo Active - Mô hình học tiên tiến giúp trẻ yêu thích học tiếng Anh</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/170423_royalschool_avatar.jpg" alt="Học sinh trường quốc tế chế tạo tên lửa nước" title="Học sinh trường quốc tế chế tạo tên lửa nước">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Học sinh trường quốc tế chế tạo tên lửa nước</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/170423_uef_avatar.jpg" alt="Du học tại chỗ, nhận bằng cử nhân Anh Quốc tại UEF" title="Du học tại chỗ, nhận bằng cử nhân Anh Quốc tại UEF">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Du học tại chỗ, nhận bằng cử nhân Anh Quốc tại UEF</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/140423_hutech_avatar.jpg" alt="Gen Z chinh phục ngành quan hệ công chúng" title="Gen Z chinh phục ngành quan hệ công chúng">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Gen Z chinh phục ngành quan hệ công chúng</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/140423_emasi_avatar.jpg" alt="Cơ hội học bổng tại Trường EMASI" title="Cơ hội học bổng tại Trường EMASI">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Cơ hội học bổng tại Trường EMASI</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/120423_dhvotruongtoan_avatar.jpg" alt="Xét tuyển học bạ - 'chìa khóa' mở cảnh cửa đại học" title="Xét tuyển học bạ - 'chìa khóa' mở cảnh cửa đại học">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Xét tuyển học bạ - 'chìa khóa' mở cảnh cửa đại học</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/120423_shiseido_avatar.jpg" alt="Power of Radiance 2023 vinh danh cô giáo Việt đầu tiên" title="Power of Radiance 2023 vinh danh cô giáo Việt đầu tiên">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Power of Radiance 2023 vinh danh cô giáo Việt đầu tiên</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/110423_royalschool_avatar.jpg" alt="Có một ngôi trường, nơi con được chạm muôn điều con yêu" title="Có một ngôi trường, nơi con được chạm muôn điều con yêu">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Có một ngôi trường, nơi con được chạm muôn điều con yêu</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/070423_tbd_avatar.jpg" alt="Học marketing thế nào để tìm việc lương cao từ những năm đầu?" title="Học marketing thế nào để tìm việc lương cao từ những năm đầu?">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>Học marketing thế nào để tìm việc lương cao từ những năm đầu?</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-lg-3 cohoi_small">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 pe-3 pe-lg-0">
+                    <a href="#">
+                      <img class="w-100" src="https://cohoi.tuoitre.vn/upload/items/388x243/100423_royalschool_avatar.jpg" alt="'Cho con tự tạo nên mùa hè của riêng mình' với trại hè" title="'Cho con tự tạo nên mùa hè của riêng mình' với trại hè">
+                    </a>
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <a href="#">
+                      <h6>'Cho con tự tạo nên mùa hè của riêng mình' với trại hè</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="container-lg">
+        <div class="footer-main">
+          <div class="row g-0 gx-lg-5">
+            <div class="col-lg-4">
+              <div class="d-lg-none">
+                <div class="zonebot">
+                  <div><a href="#">Tin mới</a></div>
+                  <div><a href="#">Công nghệ</a></div>
+                  <div><a href="#">Đó đây</a></div>
+                  <div><a href="#">Khỏe đẹp</a></div>
+                  <div><a href="#">Khỏe đẹp</a></div>
+                  <div><a href="#">Tài chính 4.0</a></div>
+                </div>
+              </div> 
+              <!-- 1 -->
+              <div class="footer-img">
+                <div class="row g-0">
+                  <div class="col-6">
+                    <a href="podcast.html">
+                      <img class="w-100" src="https://static.mediacdn.vn/tuoitre/web_images/ttopodcast_logo.png" alt="">
+                    </a>
+                  </div>
+                  <div class="col-6 text-end d-lg-none">
+                    <div>Theo dõi chúng tôi tại</div>
+                    <div class="text-end">
+                      <span>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg>
+                        </a>
+                      </span>
+                      <span>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                          </svg>
+                        </a>
+                      </span>
+                      <span>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-3 row g-3">
+                  <div class="col-4">
+                    <a href="#">
+                      <img class="w-100" src="https://static.mediacdn.vn/tuoitre/web_images/logottofoot.png" alt="">
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="index.html">
+                      <img class="w-100" src="https://static.mediacdn.vn/tuoitre/web_images/logottotvfoot.png" alt="">
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="detail_video.html">
+                      <img class="w-100" src="https://static.mediacdn.vn/tuoitre/web_images/logottocuoifoot.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="py-2 d-lg-none">
+                <div>
+                  <span class="text-uppercase">Tòa soạn và trị sự</span>
+                  <div class="text">Số 60A, Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, Thành phố Hồ Chí Minh, Việt Nam</div>
+                </div>
+                <div>
+                  <span class="text-uppercase">Liên hệ quảng cáo</span>
+                  <div class="text">028.39974848</div>
+                  <div class="text">Giấy phép hoạt động báo điện tử tiếng Việt, tiếng Anh Số 09/GP-BTTTT, cấp ngày 06-01-2014</div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="pt-3 d-none d-lg-block">
+                <div>Giấy phép hoạt động báo điện tử tiếng Việt, tiếng Anh Số 09/GP-BTTTT, cấp ngày 06-01-2014</div>
+                <div>
+                  <span>Mã số thuế:</span> 0301465256
+                </div>
+                <div>
+                  <span>Tòa soạn và trị sự:</span> Số 60A, Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, Thành phố Hồ Chí Minh, Việt Nam
+                </div>
+              </div>
+            </div> 
+            <div class="col-lg-3">
+              <div class="tit">Liên hệ quảng cáo</div>
+              <p>Hotline: <br> 028.39974848</p>
+              <a href="#">
+                <p>quangcao.tuoitre.vn</p>
+              </a>
+            </div> 
+            <div class="col-lg-3">
+              <div class="tit">Góp ý - Đóng góp</div>
+              <p>Tuổi trẻ Podcast</p>
+              <p>Hotline: <br> 028.38.443.826</p>
+              <p>Email: <br> podcast@tuoitre.com.vn</p>
+            </div> 
+            <div class="col-lg-2">
+              <div class="tit">Theo dõi</div>
+              <div>
+                <p>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg>Facebook
+                  </a>
+                </p>
+                <p>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                    </svg>Youtube
+                  </a>
+                </p>
+                <p>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                    </svg>Tiktok
+                  </a>
+                </p>
+              </div>
+            </div> 
+          </div>
+          <div class="d-flex justify-content-between footer-bottom">
+            <div class="clearfix">Copyright © 2024. Tuoitre.vn. All rights reserved.</div>
+            <div>
+              <a href="" class="fs-6 d-none d-lg-blocks">Điều khoản & Bảo mật</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- nut -->
+    <div id="backtop">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+      </svg>
+    </div>
+  </div>
+</body>
+<script>
+  let menuMain = $('.menu-main');
+  let menuSub = $('.menu-sub');
+   
+  menuMain.on('click', function() {
+    menuMain.css('display', 'none');
+    menuSub.css('display', 'block');
+  })
+
+  menuSub.on('click', function() {
+    menuSub.css('display', 'none');
+    menuMain.css('display', 'block');
+  })
+
+  let data = [
+        { 
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/20/photo1724121531151-17241215313221193241070.jpg',
+          title: 'Đất Và Người',
+          timeDate: '20/08 | 10:00',
+          time: '20 thg 08',
+          content: 'Chính chủ bán gấp 360m2 ngay trung tâm TP Bình Dương, Dân Đông Kín',        
+        },
+        {
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/20/photo1724158676236-17241586762992046083759.jpg',
+          title: 'Tin Nhanh Mỗi Ngày',
+          timeDate: '20/08 | 19:54',
+          time: '20 thg 08',
+          content: 'Tin tức tối 20-8: Thông tin mới vụ bất thường điểm thi lớp 10 ở Thái Bình', 
+        },
+        {
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/20/photo1724140132471-17241401331581489061625.png',
+          title: 'Sức Khỏe Của Bạn',
+          timeDate: '20/08 | 17:00',
+          time: '20 thg 08',
+          content: 'Cháo rau củ vừa rẻ vừa bổ, tại sao không thử?', 
+        },
+        {
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/20/photo1724131524628-17241315250411876359959.jpg',
+          title: 'Chuyện Gia Đình',
+          timeDate: '20/08 | 15:00',
+          time: '20 thg 08',
+          content: 'Nhiều cô gái chưa muốn kết hôn sớm vì lý do gì?', 
+        },
+        {
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/20/photo1724129993182-1724129993568124056962.png',
+          title: 'Công Nghệ',
+          timeDate: '20/08 | 13:00',
+          time: '20 thg 08',
+          content: "Người dùng còn phải bị làm phiền từ 'số lạ' đến bao giờ?", 
+        },
+        {
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/20/photo1724114436421-17241144365011035150844.jpg',
+          title: 'Tin Nhanh Mỗi Ngày',
+          timeDate: '20/08 | 8:00',
+          time: '20 thg 08',
+          content: 'Tin tức sáng 20-08: TP.HCM có 141 vùng hạn chế khai thác nước ngầm', 
+        },
+        {
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/19/photo1724046159509-17240461596421260798876.png',
+          title: 'Sức Khỏe Của Bạn',
+          timeDate: '19/08 | 21:00',
+          time: '19 thg 08',
+          content: "Sau tiêm thuốc tránh thai, nhiều chị em mất cảm hứng 'yêu'", 
+        },
+        {
+          src:'',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/19/photo1724071649369-1724071649420255019461.jpg',
+          title: 'Tin Nhanh Mỗi Ngày',
+          timeDate: '19/08 | 19:46',
+          time: '19 thg 08',
+          content: 'Tin tức tối 19-8: Cá linh về chợ nhiều hơn, giá giảm còn 150.000 đồng/kg', 
+        },
+        {
+          src:'',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/19/photo1724065787993-1724065788067644445893.jpg',
+          title: 'Tin Nhanh Mỗi Ngày',
+          timeDate: '19/08 | 18:00',
+          time: '19 thg 08',
+          content: "Lương nhà giáo đến bao giờ mới hết 'bất cập'", 
+        },
+        {
+          src:'',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/19/photo1724052186835-17240521869781320605301.jpg',
+          title: 'Sức Khỏe Của Bạn',
+          timeDate: '19/08 | 15:00',
+          time: '19 thg 08',
+          content: 'Cách chăm sóc dinh dưỡng cho trẻ mắc bệnh sởi phụ huynh nên biết', 
+        },
+        {
+          src:'',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/19/photo1724044789231-17240447893322107269430.png',
+          title: 'Đất Và Người',
+          timeDate: '19/08 | 13:00',
+          time: '19 thg 08',
+          content: 'GS.TS Võ Tòng Xuân từ trần', 
+        },
+        {
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/19/photo1724037127721-17240371279931382862004.png',
+          title: 'Tin Nhanh Mỗi Ngày',
+          timeDate: '19/08 | 11:00',
+          time: '19 thg 08',
+          content: 'Vì sao Mercedes - Benz Việt Nam chưa được gia hạn đầu tư nhà máy ở TP.HCM?', 
+        },
+        {
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/19/photo1724028613566-172402861384444977989.jpg',
+          title: 'Tin Nhanh Mỗi Ngày',
+          timeDate: '19/08 | 07:48',
+          time: '19 thg 08',
+          content: 'Tin tức sáng 19-8: Bà Harris dẫn trước ông Trump với khoảng cách mong manh', 
+        },
+        {
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/18/photo1723973083727-1723973083832668129312.jpg',
+          title: 'Đất Và Người',
+          timeDate: '18/08 | 21:00',
+          time: '18 thg 08',
+          content: "Cô gái trúng tuyển 3 trường đại học với cuộc đời 'đau như phim'", 
+        },
+        {
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/18/photo1723985257098-17239852571651944116732.jpg',
+          title: 'Tin Nhanh Mỗi Ngày',
+          timeDate: '18/08 | 20:00',
+          time: '18 thg 08',
+          content: 'Tin tức tối 18-8: Thông tin mới nhất vụ lật xe khách làm 18 người bị thương', 
+        },
+        {
+          src:'#',
+          image: 'https://cdn.tuoitre.vn/zoom/250_250/471584752817336320/2024/8/18/photo1723975103596-17239751039591983091195.jpg',
+          title: 'Tin Nhanh Mỗi Ngày',
+          timeDate: '18/08 | 19:00',
+          time: '18 thg 08',
+          content: "'Xổ số' Labubu trên livestream TikTok có phải cờ bạc trá hình?", 
+        }
+    ];
+
+  const content = $('.items-podcast .row');
+  let contentHtml = '';
+
+  data.forEach((item, index) => {
+    let packageHtml = `<div class="col-12 col-lg-3">
+                          <div class="items-podcast-mobi">
+                            <div class="items-podcast-sub">
+                              <a href="${item.src}">
+                                <img src="${item.image}" alt="${item.title}">
+                              </a>
+                              <div class="bottom-left">
+                                <svg width="55" height="55" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="35" cy="35" r="34.5" fill="#FFFCFC" fill-opacity="0.69" stroke="#FF1A1A"></circle>
+                                  <path d="M50.75 36.5268L25.8594 50.8974C25.526 51.0898 25.1094 50.8493 25.1094 50.4644L25.1094 21.7231C25.1094 21.3382 25.526 21.0977 25.8594 21.2901L50.75 35.6607C51.0833 35.8532 51.0833 36.3343 50.75 36.5268Z" fill="#FF0000" stroke="#FF1A1A"></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="mt-lg-4">
+                              <a href="">
+                                <h6>${item.title}</h6>
+                              </a>
+                              <div class="time">${item.timeDate}</div>
+                                <a href="">
+                                  <p class="mt-lg-2 text">${item.content}</p>
+                                </a>
+                                <div class="d-lg-none">
+                                  <div class="items-time">
+                                    <span>${item.time}</span>
+                                    <span>${item.title}</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>`;
+    contentHtml += packageHtml;
+  });
+
+  content.html(contentHtml);
+
+  const carouselButton = document.querySelectorAll('.carousel-indicators button');
+  carouselButton.forEach(button => {
+    button.addEventListener('click', function() {
+      carouselButton.forEach(btn => {
+        btn.classList.remove('active');
+      });
+      this.classList.add('active');
+    });
+  });
+
+  const cohois = document.querySelectorAll('.cohoi');
+  const tab_cohois = document.querySelectorAll('.tab_content');
+  cohois.forEach(ch => {
+    ch.addEventListener('click', () => {
+      let indexch = ch.dataset.cohoi;
+
+      cohois.forEach(ch => ch.classList.remove('active_cohoi'));
+      ch.classList.add('active_cohoi'); 
+      tab_cohois.forEach(tab => tab.style.display='none');
+
+      tab_cohois[indexch].style.display = 'block';
+    })
+  })
+
+  
+  let backtop = document.querySelector('#backtop');
+  backtop.addEventListener('click', () => {
+    window.scrollTo(300,0);
+  })
+</script>
+</html>
+
+ 
