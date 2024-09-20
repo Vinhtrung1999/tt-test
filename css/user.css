@@ -222,7 +222,6 @@ input:focus {
     opacity: .5;
 }
 
-/* Phần nội dung */
 a {
     text-decoration: none;
 }
@@ -234,11 +233,6 @@ a {
 
 .content {
     padding-left: 20px;
-}
-
-.info-lists {
-    overflow-y: scroll;
-    height: 500px;
 }
 
 .info-lists::-webkit-scrollbar { 
@@ -254,6 +248,10 @@ a {
 }
 
 .aside-user {
+    position: sticky;
+    top: 165px;
+    z-index: 1020;
+    max-height: 58vh;
     background-color: #F2F2F2;
     margin-top: 20px;
 }
@@ -272,12 +270,9 @@ a {
     color: #ee3322 !important; 
 }
 
-
-/* Chỉnh sửa i */
 .aside i {
     padding: 0px 18px;
 }
-
 
 label {
     font-size: 16px;
@@ -316,20 +311,19 @@ label {
     color: #fff;
 }
 
-/* Đã đăng */
-#post-manage .nav-item {
+.content-items .nav-item {
     font-weight: 500;
     text-transform: uppercase;
     font-size: 15px;
     padding: 5px 10px 2px;
+    cursor: pointer;
 }
 
-#post-manage .nav-item.active {
+.content-items .nav-item.active {
     color: #ec3222;
     border-bottom: 2px solid #ec3222;
 }
 
-/*Mua gói điểm*/
 .list-point {
     height: 50px;
     border: 1px solid #ccc;
@@ -524,7 +518,6 @@ ul.dropdown-menu {
     padding: 0;
 }
 
-/*gift code*/
 #gift-code .input-gift {
     height: 40px;
     border: 1px solid #c9c7c2;
@@ -579,7 +572,7 @@ ul.dropdown-menu {
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 1055; /* Ensure it appears above other elements */
+    z-index: 1055; 
 }
 
 .hide {
@@ -591,8 +584,6 @@ ul.dropdown-menu {
     border-radius: 50%;
     color: #ec3222;
 }
-
-/* footer */
 
 .footer a {
     text-decoration: none;
@@ -637,8 +628,28 @@ ul.dropdown-menu {
     font-size: 17px;
 }
 
-@media only screen and (max-width: 992px) {
-    #trade-history .nav-item {
-        display: none;
+@media only screen and (max-width: 768px) { 
+    #trade-history .nav-item,
+    .aside-user,
+    .table-nav {
+        display: none !important;
     }
+
+
+    .footer {
+        background-color: #F5F5F5;
+        padding-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .aside-user {
+        position: static;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+
 }

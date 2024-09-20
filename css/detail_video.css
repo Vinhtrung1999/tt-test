@@ -315,7 +315,7 @@ a {
 
 .item-title-content {
   color: white;
-  paddin: 15px;
+  padding: 15px;
 }
 
 .item-title-content span a {
@@ -696,7 +696,9 @@ a {
       padding: 0 20px;
     }
 
-    .box-category {
+    .box-category,
+    .box-cdnb,
+    .box-tvpl {
       padding: 20px;
     }
     
@@ -725,7 +727,7 @@ a {
     .detail-cmain-cohoi h5  {
       position: relative;
       cursor: pointer;
-      padding: 0;
+      padding-left: 10px;
     }
 
     .title-name {
@@ -749,14 +751,12 @@ a {
     }
   
     .title-category {
-      color: #000 ;
-      margin-left: 10px;
-      padding-left: 8px;
-      padding-right: 30px;
+      color: #000;
       line-height: 34px;
       font-size: 22px;
       font-weight: 500;
       cursor: pointer;
+      padding-left: 10px;
     }
           
     .title-category::before {

@@ -52,6 +52,10 @@ a {
     background: #bfe2f5;
 }
 
+.menu-sub {
+    display: none;
+}
+
 .header-title-mobi {
     display: flex;
     justify-content: space-between;

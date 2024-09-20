@@ -227,43 +227,43 @@
                                 </div>
                                 <div class="offcanvas-body-row2">
                                     <div>
-                                        <a class="nav-link" href="">
+                                        <a class="nav-link" href="#user-private">
                                             <i class="far fa-user"></i>
                                             Thông tin cá nhân
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="nav-link" href="">
+                                        <a class="nav-link" href="#user-like">
                                             <i class="far fa-heart"></i>
                                             Danh sách yêu thích
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="nav-link" href="">
+                                        <a class="nav-link" href="#post-manage">
                                             <i class="fas fa-tasks"></i>
                                             Quản lý tin đăng
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="nav-link" href="">
+                                        <a class="nav-link" href="#anonymous">
                                             <i class="far fa-bell"></i>
                                             Thông báo
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="nav-link" href="">
+                                        <a class="nav-link" href="#buy-point">
                                             <i class="fas fa-shopping-bag"></i>
                                             Mua gói điểm
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="nav-link" href="">
+                                        <a class="nav-link" href="#trade-history">
                                             <i class="fas fa-history"></i>
                                             Lịch sử giao dịch
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="nav-link" href="">
+                                        <a class="nav-link" href="#gift-code">
                                             <i class="fas fa-qrcode"></i>
                                             Gift code
                                         </a>
@@ -285,7 +285,7 @@
         <div class="main">
             <div class="container-lg">
                 <div class="row g-0">
-                    <div class="col-lg-3 d-lg-block d-none aside-user">
+                    <div class="col-3 aside-user">
                         <div class="user">
                             <div></div>
                             <div>
@@ -302,7 +302,7 @@
                                 </a>
                             </div>
                             <div class="items">
-                                <a href="#user-like">
+                                <a href="#user-like" id="m_user-like">
                                     <i class="far fa-heart"></i>
                                     Danh sách yêu thích
                                 </a>
@@ -339,7 +339,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9 ps-lg-4 info-lists">
+                    <div class="col-9 ps-lg-4 info-lists">
                         <!-- Thong tin ca nhan -->
                         <div id="user-private" class="content-items active">
                             <div class="title">Thông tin cá nhân</div>
@@ -699,11 +699,11 @@
                             <div class="title">Lịch sử giao dịch</div>
                     
                             <div class="d-flex flex-wrap">
-                                <div class="nav-item active">Mua điểm</div>
-                                <div class="nav-item">Điểm thưởng</div>
-                                <div class="nav-item">Ví nạp</div>
-                                <div class="nav-item">Ví thưởng</div>
-                                <div class="nav-item">Chờ thanh toán</div>
+                                <div class="nav-item active" data-table="0">Mua điểm</div>
+                                <div class="nav-item" data-table="1">Điểm thưởng</div>
+                                <div class="nav-item" data-table="2">Ví nạp</div>
+                                <div class="nav-item" data-table="3">Ví thưởng</div>
+                                <div class="nav-item" data-table="4">Chờ thanh toán</div>
                             </div>
 
                             <div class="d-lg-none">
@@ -722,17 +722,6 @@
                                 </div>
                             </div>
 
-                            <table class="d-none d-lg-block">
-                                <tr>
-                                    <th>Ngày</th>
-                                    <th>Gói điểm</th>
-                                    <th>Giá tiền</th>
-                                    <th>Mã thanh toán</th>
-                                    <th>Hình thức</th>
-                                    <th>Điểm giao dịch</th>
-                                </tr>
-                            </table>
-
                             <div class="d-lg-none table-bordered">
                                 <table>
                                     <tr>
@@ -745,6 +734,59 @@
                                     </tr>
                                 </table>
                             </div>
+
+                            <!-- 1 -->
+                            <table class="table-nav">
+                                <tr>
+                                    <th>Ngày</th>
+                                    <th>Gói điểm</th>
+                                    <th>Giá tiền</th>
+                                    <th>Mã thanh toán</th>
+                                    <th>Hình thức</th>
+                                    <th>Điểm giao dịch</th>
+                                </tr>
+                            </table>
+
+                            <!-- 2 -->
+                            <table class="table-nav hide">
+                                <tr>
+                                    <th>Ngày</th>
+                                    <th>Số điểm</th>
+                                    <th>Điểm trước giao dịch</th>
+                                    <th>Ghi chú</th>
+                                </tr>
+                            </table>
+
+                            <!-- 3 -->
+                            <table class="table-nav hide">
+                                <tr>
+                                    <th>Ngày</th>
+                                    <th>Số điểm trừ</th>
+                                    <th>Điểm trước giao dịch</th>
+                                    <th>Ghi chú</th>
+                                </tr>
+                            </table>
+
+                            <!-- 4 -->
+                            <table class="table-nav hide">
+                                <tr>
+                                    <th>Ngày</th>
+                                    <th>Số điểm</th>
+                                    <th>Điểm trước giao dịch</th>
+                                    <th>Ghi chú</th>
+                                </tr>
+                            </table>
+
+                            <!-- 5 -->
+                            <table class="table-nav hide">
+                                <tr>
+                                    <th>Ngày tạo</th>
+                                    <th>Hết hạn</th>
+                                    <th>Gói điểm</th>
+                                    <th>Giá tiền</th>
+                                    <th>Mã thanh toán</th>
+                                </tr>
+                            </table>
                         </div>
 
                         <!-- Gift code -->
@@ -790,7 +832,7 @@
         <div class="footer mt-lg-4">
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-md-3">
                         <a href="">
                             <img src="https://raovat.tuoitre.vn/img/logo/TTOLogo.png" alt="">
                         </a>
@@ -812,7 +854,7 @@
                             <a href="">hotro@tuoitre.com.vn.</a>
                         </p>
                     </div>
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-md-3">
                         <div class="title">Về chúng tôi</div>
                         <p><a href="">Giới thiệu</a></p>
                         <p><a href="">Chính sách bảo mật thanh toán</a></p>
@@ -823,7 +865,7 @@
                         <p><a href="">Tra cứu thông tin doanh nghiệp</a></p>
                         <p><a href="">Tra cứu dịch vụ công tp.HCM</a></p>
                     </div>
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-md-3">
                         <div class="title">Chăm sóc khách hàng</div>
                         <p><a href="">An toàn giao dịch</a></p>
                         <p><a href="">Hướng dẫn đăng tin</a></p>
@@ -832,7 +874,7 @@
                         <p><a href="">Bảng giá</a></p>
                         <p><a href="">Thông tin khuyến mãi</a></p>
                     </div>
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-md-3">
                         <div class="title">Phương thức thanh toán</div>
                         <div class="d-flex flex-wrap gap-3 mt-2">
                             <div><img src="https://raovat.tuoitre.vn/img/trade/image6.png" alt=""></div>
@@ -849,10 +891,10 @@
             <div class="footer-bottom">
                 <div class="container-lg">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-md-4">
                             © 2019 - Trung tâm Dịch vụ Truyền thông - Báo Tuổi TrẻTổng biên tập Báo Tuổi Trẻ: <span class="fw-bold">Lê Thế Chữ</span>
                         </div>
-                        <div class="col-lg-5">Số giấy phép: <span class="fw-bold">09/GP-BTTTT</span>
+                        <div class="col-md-5">Số giấy phép: <span class="fw-bold">09/GP-BTTTT</span>
                            <br> Ngày cấp: <span class="fw-bold">04/01/2012 - Nơi cấp: Bộ Thông tin Truyền thông - MST: 0301465256</span></div>
                     </div>
                 </div>
@@ -866,6 +908,22 @@
     </div>
 </body>
 <script>
+    // Xu ly trong lich su giao dich
+    let item_tradeHistory = document.querySelectorAll("#trade-history .nav-item");
+    let table_tradeHistory = document.querySelectorAll("#trade-history .table-nav")
+
+    item_tradeHistory.forEach(item => {
+        item.addEventListener('click', () => {
+            let input_nav = item.dataset.table;
+
+            table_tradeHistory.forEach(table => {
+                table.classList.add('hide');
+            })
+
+            table_tradeHistory[input_nav].classList.remove('hide');
+        })
+    })
+
     let menuMain = document.querySelector('.menu-main');
     let menuSub = document.querySelector('.menu-sub');
     menuMain.addEventListener('click', function() {
@@ -944,7 +1002,7 @@
     });
 
     // Xu ly khi click <a>
-    let links = document.querySelectorAll('.items a')
+    let links = document.querySelectorAll('.items a, .offcanvas .offcanvas-body a');
     let contentItems = document.querySelectorAll('.content-items');
     links.forEach(link => {
         link.addEventListener('click', (e) => {
