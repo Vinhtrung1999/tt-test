@@ -425,6 +425,7 @@ ul {
     background: #ccc;
     padding: 8px 15px;
     margin-left: 6px;
+    margin-bottom: 30px;
     border-radius: 50%;
     cursor: pointer;
     opacity: .5;
@@ -480,6 +481,7 @@ ul {
     height: auto;
     position: sticky;
     top: 15px;
+    margin-bottom: 30px;
 }
 
 .input-group .text {

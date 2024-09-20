@@ -1416,6 +1416,7 @@ input:focus, textarea:focus {
 
   .main-content-title .box-category-item {
     border-bottom: 1px dashed #8f8f8f;
+    padding: 25px 0;
   }
 
   .main-content-title .box-category-item img {

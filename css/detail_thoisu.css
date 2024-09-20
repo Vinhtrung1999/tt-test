@@ -50,7 +50,7 @@ header .navbar {
 .modal-dialog {
     left: -10%;
     top: 0;
-  }
+}
   
 .modal-content {
     width: 780px;
@@ -65,14 +65,10 @@ header .navbar {
 }
   
 .content {
-    height: 400px;
     margin: 0 24px 24px;
     padding: 24px;
     background: #fff;
     border-radius: 8px;
-    scrollbar-color: #888 #d2d1d1;
-    scrollbar-width: thin;
-    overflow-y: auto;
 }
   
 .content p {
@@ -80,6 +76,12 @@ header .navbar {
     line-height: 22px;
     font-weight: 400;
     color: #565656 !important;
+}
+
+#Right4Sticky {
+    min-height: 100vh;
+    position: sticky;
+    top: 45px;
 }
   
 .sticky-top {
@@ -460,6 +462,32 @@ header .navbar {
         padding-top: 0;
     }
 
+    .content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .list_focus .box-category-item {
+        border-bottom: 1px dashed #d9d9d9;
+    }
+
+    .list_focus .box-category {
+        padding: 25px 0;
+    }
+
+    .category-title {
+        padding-top: 0;
+    }
+
+    .box-border,
+    .list_focus-sub {
+        display: none;
+    }
+
+    .listing_content {
+        border-right: none !important;
+    }
+
     .active_bre h4 {
         color: #ed1c24 !important;
     }
@@ -509,9 +537,9 @@ header .navbar {
         padding: 0 0 0 10px;
     }
         
-        .slider-title {
-            gap: 15px;
-        }
+    .slider-title {
+        gap: 15px;
+    }
         
     .footer-top,
     .list-new,
@@ -526,7 +554,7 @@ header .navbar {
     }
 
     .list_listing .box-category-item {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     .footer {
